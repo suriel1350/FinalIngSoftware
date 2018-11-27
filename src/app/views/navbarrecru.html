@@ -1,0 +1,64 @@
+<mdb-navbar SideClass="navbar navbar-expand-lg navbar-dark my-color">
+
+    <!-- Navbar brand -->
+    <mdb-navbar-brand><a class="navbar-brand" [routerLink]="['/inicio']">Faurecia</a></mdb-navbar-brand>
+
+    <!-- Collapsible content -->
+    <links>
+
+        <!-- Links -->
+        <ul class="navbar-nav mr-auto">
+            <li routerLinkActive="active" [routerLink]="['/inicio']" class="nav-item">
+                <a i18n="@@navbarRecruHomeID" class="nav-link waves-light" mdbWavesEffect>Inicio</a>
+            </li>
+            <li routerLinkActive="active" [routerLink]="['/see-referrals']" class="nav-item">
+                <a i18n="@@navbarRecruMisRefesID" class="nav-link waves-light" mdbWavesEffect>Candidatos</a>
+            </li>
+            <li (click)="show( 'Hello' )" class="nav-item">
+                <a i18n="@@navbarRecruNuevoID" class="nav-link waves-light" mdbWavesEffect><mdb-icon icon="bell"></mdb-icon><span class="badge faurecia-rosa">Nuevo</span></a>
+            </li>
+            <li (click)="logout()" class="nav-item active">
+                <a i18n="@@navbarRecruCerrarSesionID" class="nav-link waves-light" mdbWavesEffect>Cerrar Sesión</a>
+            </li>
+        </ul>
+        <!-- Links -->
+
+        <div *ngFor="let locale of languages">
+          <a [href]="'/' + locale.code + '/#' + currentUrl" class="btn faurecia-rosa waves-light btnTabla" mdbWavesEffect>{{ locale.label }}</a>
+        </div>
+    </links>
+    <!-- Collapsible content -->
+
+</mdb-navbar>
+
+<div mdbModal #contentnotirecru="mdbModal" class="modal fade right" tabindex="-1" role="dialog" aria-labelledby="myBasicModalLabel"
+aria-hidden="true">
+  <div class="modal-dialog modal-full-height modal-right" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close pull-right" aria-label="Close" (click)="contentnotirecru.hide()">
+          <span aria-hidden="true">×</span>
+        </button>
+        <h4 i18n="@@navbarRecruModalTituloID" class="modal-title w-100" id="myModalLabel">Mis notificaciones</h4>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-md-12 col-lg-12 col-xl-12 text-center">
+            <div class="list-group" *ngFor="let n of notification">
+              <a class="list-group-item list-group-item-action flex-column align-items-start">
+                <div class="d-flex w-100 justify-content-between">
+                  <h5 class="mb-1"><button i18n="@@navbarRecruModalDeleteID" (click)="deleteNotification(n.id)" class="btn faurecia-rosa waves-light btnTabla" mdbWavesEffect>Eliminar</button></h5>
+                  <small style="padding-top: 10px;">{{n.createdAt}}</small>
+                </div>
+                <p class="mb-1">{{n.contenido}}</p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button i18n="@@navbarRecruModalCloseID" class="btn faurecia-rosa waves-light" aria-label="Close" (click)="contentnotirecru.hide()" mdbWavesEffect>Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>

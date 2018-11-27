@@ -1,0 +1,55 @@
+
+<app-navbar></app-navbar>
+
+<div class="container">
+    <div class="row">
+      <div class="col-md-6 mx-auto my-5">
+        <section class="form-elegant">
+          <!--Form without header-->
+          <div class="card">
+            <div class="card-body mx-4">
+              <!--Header-->
+              <div class="text-center">
+                <h3 class="dark-grey-text mb-5">
+                  <strong i18n="@@validateTituloID">Registrarse</strong>
+                </h3>
+              </div>
+
+              <form #loginForm="ngForm" (ngSubmit)="onSubmitRegister()">
+                <div class="md-form">
+                  <input type="email" class="form-control" mdbInputDirective #email="ngModel" name="email" [(ngModel)]="user_register.email">
+                  <label i18n="@@validateEmailID" for="elegantFormEmailEx">Correo Electrónico</label>
+                </div>
+
+                <div class="md-form">
+                  <input type="password" class="form-control" mdbInputDirective #password="ngModel" name="password" [(ngModel)]="user_register.password">
+                  <label i18n="@@validatePasswordID" for="elegantFormEmailEx">Contraseña</label>
+                </div>
+
+                <div class="text-center mb-3">
+                  <button i18n="@@validateRegisterID" type="submit" class="btn faurecia-rosa btn-block btn-rounded z-depth-1a waves-light" mdbWavesEffect>Registrar</button>
+                </div>
+
+              </form>
+              <!--Body-->
+            </div>
+            <!--Footer-->
+            <div class="modal-footer mx-5 pt-3 mb-1">
+              <p class="font-small grey-text d-flex justify-content-end">
+                <a i18n="@@validateGoLoginID" [routerLink]="['/login']" class="blue-text ml-1"> Ir a Iniciar Sesión</a>
+              </p>
+            </div>
+
+          </div>
+          <!--/Form without header-->
+
+        </section>
+
+      </div>
+
+    </div>
+</div>
+
+<!--Footer-->
+    <app-footer></app-footer>
+<!--/.Footer-->

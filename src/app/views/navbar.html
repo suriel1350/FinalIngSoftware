@@ -1,0 +1,24 @@
+<mdb-navbar SideClass="navbar navbar-expand-lg navbar-dark my-color">
+
+    <!-- Navbar brand -->
+    <mdb-navbar-brand><a class="navbar-brand" href="#">Faurecia</a></mdb-navbar-brand>
+
+    <!-- Collapsible content -->
+    <links>
+
+        <!-- Links -->
+        <ul class="navbar-nav mr-auto">
+            <li routerLinkActive="active" [routerLink]="['/login']" class="nav-item">
+                <a i18n="@@navbarLoginID" class="nav-link waves-light" mdbWavesEffect>Iniciar Sesión</a>
+            </li>
+
+        </ul>
+        <!-- Links -->
+
+        <div *ngFor="let locale of languages">  
+          <a [href]="'/' + locale.code + '/#' + currentUrl" class="btn faurecia-rosa waves-light btnTabla" mdbWavesEffect>{{ locale.label }}</a>
+        </div>
+    </links>
+    <!-- Collapsible content -->
+
+</mdb-navbar>

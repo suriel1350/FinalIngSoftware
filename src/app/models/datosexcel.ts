@@ -1,0 +1,31 @@
+export class DatosExcel{
+	constructor(
+    public idreferral: string,
+    public nombre: string,
+    public apellido: string,
+    public email: string,
+    public telefono: string,
+		public area: string,
+    public experience: string,
+    public estadoresidencia: string,
+    public carrera: string,
+    public universidad: string,
+    public nivelingles: string,
+    public genero: string,
+    public areaposicion: string,
+    public nombreposicion: string,
+    public areasegundaposicion: string,
+    public nombresegundaposicion: string,
+    public fechacreacion: string,
+		public localidadreclutador: string,
+    public nombrereclutador: string,
+    public apellidos: string,
+    public emailreclutador: string,
+    public empleadonombre: string,
+    public apellidoempleado: string,
+    public emailempleado: string,
+    public telefonoempleado: string,
+    public posicionempleado: string,
+    public status: string
+	){}
+}

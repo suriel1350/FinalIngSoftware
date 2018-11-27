@@ -1,0 +1,346 @@
+/* You can add global styles to this file, and also import other style files */
+@import '~ngx-toastr/toastr.css';
+
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700,300);
+
+.bonus-padding-top{
+  padding-top: 5px;
+}
+
+.size-icon-modal-status-active{
+    font-size: 2rem;
+    color: yellowgreen;
+}
+
+.size-icon-modal-status{
+    font-size: 2rem;
+    color: lightgray;
+}
+
+.p-see{
+  margin-top: 0;
+  margin-bottom: 0rem;
+}
+
+.labels-for-select{
+  color: #747373;  
+  font-weight: 400;
+}
+
+.cardopacidad{
+  opacity: 0.6;
+}
+
+.my-forgot{
+  margin-top: 7rem !important;
+  margin-bottom: 7rem !important;
+}
+
+.modal {
+  .modal-body {
+    height: 80%;
+    overflow-y: scroll;
+  }
+}
+
+.my-modal-login{
+  display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 1rem;
+    margin-top: -35px;
+    /*border-top: 1px solid #e9ecef;*/
+}
+
+.new-referral-select{
+  margin-top: 1.5rem !important;
+  margin-bottom: 1.5rem !important;
+}
+
+.buttonDisplay{
+  display: inline;
+}
+
+.referral-name{
+  font-weight: 200 !important;
+}
+
+.table th, .table td{
+  vertical-align: middle !important;
+}
+
+.img-profile{
+  max-width: 55%;
+  height: auto;
+}
+
+.img-login{
+  max-width: 75%;
+  height: auto;
+}
+
+.img-referral{
+  width: 80%;
+  height: auto;
+}
+
+.text-amazon{
+  color: #747373;
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+
+.img-amazon{
+  max-width: 100%;
+  height: auto;
+}
+
+.img-amazon-modal-confirmation{
+  max-width: 50%;
+  height: auto;
+}
+
+.img-medal{
+  width: 90px;
+  height: auto;
+}
+
+.img-bonus{
+  width: 150px;
+  height: auto;
+  cursor: pointer;
+}
+
+.img-recruiter{
+  max-width: 40%;
+  height: auto;
+}
+
+.scoreData{
+  display: inherit;
+}
+
+.title-profile{
+  font-weight: 300 !important;
+  font-size: 1.5rem !important;
+}
+
+.text-profile{
+  color: #747373;
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+.btnTabla{
+  padding: 0.4rem 0.6rem;
+  font-size: 10px;
+}
+
+.btnRefNew{
+  padding: 0.8rem 1.8rem;
+  font-size: 13px;
+}
+
+.label__checkbox {
+  display: none;
+}
+
+.label__check {
+  display: inline-block;
+  border-radius: 50%;
+  border: 5px solid rgba(0,0,0,0.1);
+  background: white;
+  vertical-align: middle;
+  margin-right: 20px;
+  width: 2em;
+  height: 2em;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: border .3s ease;
+
+  i.icon {
+    opacity: 0.2;
+    font-size: 'calc(1rem + 1vw)';
+    color: transparent;
+    transition: opacity .3s .1s ease;
+    -webkit-text-stroke: 3px rgba(0,0,0,.5);
+  }
+
+  &:hover {
+    border: 5px solid rgba(0,0,0,0.2);
+  }
+}
+
+.label__checkbox:checked + .label__text .label__check {
+  animation: check .5s cubic-bezier(0.895, 0.030, 0.685, 0.220) forwards;
+
+  .icon {
+    opacity: 1;
+    transform: scale(0);
+    color: white;
+    -webkit-text-stroke: 0;
+    animation: icon .3s cubic-bezier(1.000, 0.008, 0.565, 1.650) .1s 1 forwards;
+  }
+}
+
+@keyframes icon {
+  from {
+    opacity: 0;
+    transform: scale(0.3);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1)
+  }
+}
+
+@keyframes check {
+  0% {
+    width: 1.5em;
+    height: 1.5em;
+    border-width: 5px;
+  }
+  10% {
+    width: 1.5em;
+    height: 1.5em;
+    opacity: 0.1;
+    background: rgba(0,0,0,0.2);
+    border-width: 15px;
+  }
+  12% {
+    width: 1.5em;
+    height: 1.5em;
+    opacity: 0.4;
+    background: rgba(0,0,0,0.1);
+    border-width: 0;
+  }
+  50% {
+    width: 2em;
+    height: 2em;
+    background: #00d478; /*003684*/
+    border: 0;
+    opacity: 0.6;
+  }
+  100% {
+    width: 2em;
+    height: 2em;
+    background: #00d478;
+    border: 0;
+    opacity: 1;
+  }
+}
+
+
+
+.file-upload-wrapper {
+  $defaultColor: #fa0057;
+  $height: 60px;
+
+  position: relative;
+  width: 100%;
+  height: $height;
+
+  &:after {
+    content: attr(data-text);
+    font-size: 18px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #fff;
+    padding: 10px 15px;
+    display: block;
+    width: calc(100% - 40px);
+    pointer-events: none;
+    z-index: 20;
+    height: $height - 20px;
+    line-height: $height - 20px;
+    color: #999;
+    border-radius: 5px 10px 10px 5px;
+    font-weight: 300;
+  }
+
+  &:before {
+    content: 'CV...';
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: inline-block;
+    height: 60px;
+    background: $defaultColor;
+    color: #fff;
+    font-weight: 700;
+    z-index: 25;
+    font-size: 16px;
+    line-height: $height;
+    padding: 0 15px;
+    text-transform: uppercase;
+    pointer-events: none;
+    border-radius: 0 5px 5px 0;
+  }
+
+  &:hover {
+    &:before {
+      background: darken($defaultColor, 10%);
+    }
+  }
+   input {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 99;
+    height: $height - 20px;
+    margin: 0;
+    padding: 0;
+    display: block;
+    cursor: pointer;
+    width: 100%;
+  }
+}
+
+
+.form-elegant .font-small {
+  font-size: 0.8rem;
+}
+
+.form-elegant .z-depth-1a {
+  -webkit-box-shadow: 0 2px 5px 0 rgba(55, 161, 255, 0.26), 0 4px 12px 0 rgba(121, 155, 254, 0.25);
+  box-shadow: 0 2px 5px 0 rgba(55, 161, 255, 0.26), 0 4px 12px 0 rgba(121, 155, 254, 0.25);
+}
+
+.form-elegant .z-depth-1-half,
+.form-elegant .btn:hover {
+  -webkit-box-shadow: 0 5px 11px 0 rgba(85, 182, 255, 0.28), 0 4px 15px 0 rgba(36, 133, 255, 0.15);
+  box-shadow: 0 5px 11px 0 rgba(85, 182, 255, 0.28), 0 4px 15px 0 rgba(36, 133, 255, 0.15);
+}
+
+.main-container__bg-dark {
+  opacity: 1;
+
+  background: linear-gradient(to bottom, #003684, #fff);  /*linear-gradient(#fc7db8,#495cfc)*/
+  transition: opacity 300ms linear;
+}
+
+.my-button-color{
+	background-color: #458ac9;
+}
+
+.faurecia-rosa{
+	background-color: #fa0057;
+}
+
+.faurecia-azul{
+	background-color: #003684;
+}
+
+.faurecia-azul-instru{
+	background-color: #003684 !important;
+}
+
+.my-color{
+	background-color: #2b244d;
+}

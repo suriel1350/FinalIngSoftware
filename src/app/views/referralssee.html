@@ -1,0 +1,444 @@
+
+<!--If user has not logged in then-->
+<div *ngIf="!identity">
+	<app-navbar></app-navbar>
+
+	<!--Card-->
+	<div class="card card-cascade wider reverse my-4">
+
+	    <!--Card image-->
+	    <div class="view view-cascade overlay waves-light" mdbWavesEffect>
+	        <img src="assets/img/benefits.png" class="img-fluid">
+	        <a>
+	            <div class="mask rgba-white-slight"></div>
+	        </a>
+	    </div>
+	    <!--/Card image-->
+
+	    <!--Card content-->
+	    <div class="card-body card-body-cascade text-center">
+	        <!--Title-->
+	        <h4 class="card-title"><strong>Please, log in into your account</strong></h4>
+	        <h5 class="indigo-text"><strong>Go to log in section</strong></h5>
+
+	        <p class="card-text">
+	        </p>
+
+	        <!--Linkedin-->
+	        <a class="icons-sm li-ic"><i class="fa fa-linkedin px-2"> </i></a>
+	        <!--Twitter-->
+	        <a class="icons-sm tw-ic"><i class="fa fa-twitter px-2"> </i></a>
+	        <!--Dribbble-->
+	        <a class="icons-sm fb-ic"><i class="fa fa-facebook px-2"> </i></a>
+
+	    </div>
+	    <!--/.Card content-->
+
+	</div>
+	<!--/.Card-->
+</div>
+<!-- else if -->
+
+
+
+<!-- If user has logged in the  -->
+<div *ngIf="identity">
+	<div *ngIf="identity.role=='ROLE_ADMIN'">
+		<app-navbaradmin></app-navbaradmin>
+	</div>
+	<div *ngIf="identity.role=='ROLE_USER'">
+		<app-navbarlogged></app-navbarlogged>
+	</div>
+	<div *ngIf="identity.role=='ROLE_RECRUITER'">
+		<app-navbarrecru></app-navbarrecru>
+	</div>
+	<!--Card-->
+	<div class="card">
+
+	    <!--Card content-->
+	    <div class="card-body">
+			<!--Card-->
+			<div class="card">
+
+				<div class="row" *ngIf="identity.role=='ROLE_USER'">
+					<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+							<!--Card content-->
+							<div class="card-body text-center">
+									<!--Title-->
+									<h4 i18n="@@referralsseeID" class="card-title">Mis Candidatos
+										<button *ngIf="identity.role == 'ROLE_RECRUITER'" [routerLink]="['/inicio']" class="btn faurecia-azul waves-light" mdbWavesEffect>Volver al menú</button>
+										<button *ngIf="identity.role == 'ROLE_USER'" [routerLink]="['/referrals']" class="btn faurecia-azul waves-light" mdbWavesEffect>Volver al menú</button>
+									</h4>
+									<!--Text-->
+
+									<h5 class="card-title animated zoomIn"><strong i18n="@@referralsseeYourCandidateID">Tu candidato debe lograr todas las siguientes etapas:</strong></h5>
+									<hr>
+									<div class="row">
+										<div class="table-responsive">
+											<table class="table">
+												<thead>
+													<tr>
+														<th i18n="@@referralsseeNombreID" scope="col">Nombre</th>
+														<th i18n="@@referralsseeProfileID" scope="col">Validación de Perfil</th>
+														<th i18n="@@referralsseeInterviewTalentID" scope="col">Entrevista Talent Hub</th>
+														<th i18n="@@referralsseeInterviewHiringID" scope="col">Entrevista Hiring Manager</th>
+														<th i18n="@@referralsseeInterviewN1ID" scope="col">Entrevista N+2 / Functional</th>
+														<th i18n="@@referralsseeJobOfferID" scope="col">Oferta de Trabajo</th>
+														<th i18n="@@referralsseeJobOfferAceptanceID" scope="col">Aceptación de Oferta de Trabajo</th>
+														<th i18n="@@referralsseeSenior3MonthsID" scope="col">Seniority 3 Meses</th>
+														<th i18n="@@referralsseeSenior6MonthsID" scope="col">Seniority 6 Meses</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<th scope="row">1</th>
+														<td class="size-icon-modal-status animated zoomInDown"><mdb-icon icon="check-square-o"></mdb-icon></td>
+														<td class="size-icon-modal-status animated zoomInDown"><mdb-icon icon="check-square-o"></mdb-icon></td>
+														<td class="size-icon-modal-status animated zoomInDown"><mdb-icon icon="check-square-o"></mdb-icon></td>
+														<td class="size-icon-modal-status animated zoomInDown"><mdb-icon icon="check-square-o"></mdb-icon></td>
+														<td class="size-icon-modal-status animated zoomInDown"><mdb-icon icon="check-square-o"></mdb-icon></td>
+														<td class="size-icon-modal-status animated zoomInDown"><mdb-icon icon="check-square-o"></mdb-icon></td>
+														<td class="size-icon-modal-status animated zoomInDown"><mdb-icon icon="check-square-o"></mdb-icon></td>
+														<td class="size-icon-modal-status animated zoomInDown"><mdb-icon icon="check-square-o"></mdb-icon></td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+
+									<hr>
+
+									<div class="row" >
+											<div class="col-sm-12 col-md-3 col-lg-3 col-xl-3" *ngFor="let ref of referral; let i =index">
+											    <!--Card content-->
+											    <div class="card-body text-center">
+											        <!--Title-->
+											        <a><h4 [routerLink]="['/my-referral',ref.id]"><span class="badge faurecia-azul referral-name">{{ref.nombre}}</span></h4></a>
+											        <!--Text-->
+															<p i18n="@@referralsseeEmailRefID" class="card-text p-see">Correo electrónico: {{ref.email}}</p>
+															<p i18n="@@referralsseePhoneRefID" class="card-text p-see">Teléfono: {{ref.phone}}</p>
+											        <p i18n="@@referralsseeCareerRefID" class="card-text p-see">Carrera: {{ref.career}}</p>
+															<button i18n="@@referralsseeEditRefID" [routerLink]="['/edit-referral',ref.id]" class="btn faurecia-azul waves-light btnTabla" mdbWavesEffect>Editar</button>
+															<button i18n="@@referralsseeDeleteRefID" (click)="deleteReferral(ref.id)" class="btn faurecia-rosa waves-light btnTabla" mdbWavesEffect>Eliminar</button>
+															<button i18n="@@referralsseeStatusRefID" (click)="showStatus( ref.id )" class="btn faurecia-azul waves-light btnTabla" mdbWavesEffect>Estatus</button>
+											    </div>
+											</div>
+									</div>
+
+							</div>
+					</div>
+
+					<div mdbModal #status="mdbModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myBasicModalLabel"
+					aria-hidden="true">
+						<div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+							<div class="modal-content">
+								<div class="modal-header">
+									<button type="button" class="close pull-right" aria-label="Close" (click)="status.hide()">
+										<span aria-hidden="true">×</span>
+									</button>
+									<h4 i18n="@@referralsseeStatusYourCandidateID" class="modal-title w-100" id="myModalLabel">Estatus de tu candidato:</h4>
+								</div>
+								<div class="modal-body">
+									<div class="row">
+										<div class="col-md-12 col-lg-12 col-xl-12 text-center">
+											<div class="table-responsive">
+												<table class="table">
+												  <thead>
+												    <tr>
+												      <th i18n="@@referralsseeStatusNombreID" scope="col">Nombre</th>
+															<th i18n="@@referralsseeStatusProfileID" scope="col">Validación de Perfil</th>
+									            <th i18n="@@referralsseeStatusInterviewTalentID" scope="col">Entrevista Talent Hub</th>
+									            <th i18n="@@referralsseeStatusHiringID" scope="col">Entrevista Hiring Manager</th>
+									            <th i18n="@@referralsseeStatusN1ID" scope="col">Entrevista N+2 / Functional</th>
+									            <th i18n="@@referralsseeStatusJobOfferID" scope="col">Oferta de Trabajo</th>
+															<th i18n="@@referralsseeStatusJobOfferAceptanceID" scope="col">Aceptación de oferta de trabajo</th>
+															<th i18n="@@referralsseeStatusSenior3ID" scope="col">Seniority 3 Meses</th>
+															<th i18n="@@referralsseeStatusSenior6ID" scope="col">Seniority 6 Meses</th>
+												    </tr>
+												  </thead>
+												  <tbody>
+												    <tr>
+												      <th scope="row">1</th>
+												      <td [ngClass]="procesoModalReferral.etapa1 === true ? 'size-icon-modal-status-active' : 'size-icon-modal-status'" class="animated zoomInDown"><mdb-icon icon="check-square-o"></mdb-icon></td>
+												      <td [ngClass]="procesoModalReferral.etapa2 === true ? 'size-icon-modal-status-active' : 'size-icon-modal-status'" class="animated zoomInDown"><mdb-icon icon="check-square-o"></mdb-icon></td>
+												      <td [ngClass]="procesoModalReferral.etapa3 === true ? 'size-icon-modal-status-active' : 'size-icon-modal-status'" class="animated zoomInDown"><mdb-icon icon="check-square-o"></mdb-icon></td>
+															<td [ngClass]="procesoModalReferral.etapa4 === true ? 'size-icon-modal-status-active' : 'size-icon-modal-status'" class="animated zoomInDown"><mdb-icon icon="check-square-o"></mdb-icon></td>
+															<td [ngClass]="procesoModalReferral.etapa5 === true ? 'size-icon-modal-status-active' : 'size-icon-modal-status'" class="animated zoomInDown"><mdb-icon icon="check-square-o"></mdb-icon></td>
+															<td [ngClass]="procesoModalReferral.etapa6 === true ? 'size-icon-modal-status-active' : 'size-icon-modal-status'" class="animated zoomInDown"><mdb-icon icon="check-square-o"></mdb-icon></td>
+															<td [ngClass]="procesoModalReferral.etapa7 === true ? 'size-icon-modal-status-active' : 'size-icon-modal-status'" class="animated zoomInDown"><mdb-icon icon="check-square-o"></mdb-icon></td>
+															<td [ngClass]="procesoModalReferral.etapa8 === true ? 'size-icon-modal-status-active' : 'size-icon-modal-status'" class="animated zoomInDown"><mdb-icon icon="check-square-o"></mdb-icon></td>
+												    </tr>
+												  </tbody>
+												</table>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="modal-footer">
+									<button i18n="@@referralsseeCloseModalID" class="btn faurecia-rosa waves-light" aria-label="Close" (click)="status.hide()" mdbWavesEffect>Cerrar</button>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+				</div>
+
+					<div class="row" *ngIf="identity.role=='ROLE_RECRUITER'">
+						<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+						    <!--Card content-->
+						    <div class="card-body text-center">
+						        <!--Title-->
+						        <h4 i18n="@@referralsseeRecruTituloID" class="card-title">Mis Candidatos
+											<button *ngIf="identity.role == 'ROLE_RECRUITER'" [routerLink]="['/inicio']" class="btn faurecia-azul waves-light" mdbWavesEffect>Back to menu</button>
+											<button *ngIf="identity.role == 'ROLE_RECRUITER'" [disabled]="lockButtonReport == true" (click)="generateReportExcel()"  class="btn faurecia-rosa waves-light" mdbWavesEffect>Get Report</button>
+											<button *ngIf="identity.role == 'ROLE_USER'" [routerLink]="['/referrals']" class="btn faurecia-azul waves-light" mdbWavesEffect>Back to menu</button>
+										</h4>
+						        <!--Text-->
+
+									<h4 i18n="@@referralsseeRecrutituloPuestoID">Candidatos para un puesto en Faurecia</h4>
+							    <!--Table-->
+									<table class="table table-responsive">
+
+									    <!--Table head-->
+									    <thead class="blue-grey lighten-4">
+									        <tr>
+									            <th>#</th>
+									            <th i18n="@@referralsseeRecruProfileValiID">Validación de Perfil</th>
+									            <th i18n="@@referralsseeRecruInterviewTalentID">Entrevista Talent Hub</th>
+									            <th i18n="@@referralsseeRecruInterviewHiringID">Entrevista Hiring Manager</th>
+									            <th i18n="@@referralsseeRecruInterviewN1ID">Entrevista N+2 / Functional</th>
+									            <th i18n="@@referralsseeRecruJobOfferID">Oferta de Trabajo</th>
+															<th i18n="@@referralsseeRecruJobOfferAceptanceID">Aceptación de Oferta de Trabajo</th>
+															<th i18n="@@referralsseeRecruSenior3ID">Seniority 3 Meses</th>
+															<th i18n="@@referralsseeRecruSenior6ID">Seniority 6 Meses</th>
+															<th i18n="@@referralsseeRecruOpcionesID">Opciones</th>
+									        </tr>
+									    </thead>
+									    <!--Table head-->
+
+									    <!--Table body-->
+									    <tbody *ngFor="let ref of referral; let i =index">
+									        <tr>
+															<td>
+									            	<a><h5 [routerLink]="['/my-referral',ref.id]"><span class="badge faurecia-azul referral-name">{{ref.nombre}}</span></h5></a>
+															</td>
+															<td>
+									            	<div>
+													  <label class="label">
+													    <input  class="label__checkbox" type="checkbox" (click)="addStatus(1, ref.id, $event, ref.idusuarios, ref.nombre)" [checked]="proceso[i].etapa1" />
+													    <span class="label__text">
+													      <span class="label__check">
+													        <i class="fa fa-check icon"></i>
+													      </span>
+													    </span>
+													  </label>
+													</div>
+									            </td>
+									            <td>
+									            	<div>
+													  <label class="label">
+													    <input  class="label__checkbox" type="checkbox" (click)="addStatus(2, ref.id, $event, ref.idusuarios, ref.nombre)" [checked]="proceso[i].etapa2"  />
+													    <span class="label__text">
+													      <span class="label__check">
+													        <i class="fa fa-check icon"></i>
+													      </span>
+													    </span>
+													  </label>
+													</div>
+									            </td>
+									            <td>
+									            	<div>
+													  <label class="label">
+													    <input  class="label__checkbox" type="checkbox" (click)="addStatus(3, ref.id, $event, ref.idusuarios, ref.nombre)" [checked]="proceso[i].etapa3"/>
+													    <span class="label__text">
+													      <span class="label__check">
+													        <i class="fa fa-check icon"></i>
+													      </span>
+													    </span>
+													  </label>
+													</div>
+									            </td>
+									            <td>
+									            	<div>
+													  <label class="label">
+													    <input  class="label__checkbox" type="checkbox" (click)="addStatus(4, ref.id, $event, ref.idusuarios, ref.nombre)" [checked]="proceso[i].etapa4"/>
+													    <span class="label__text">
+													      <span class="label__check">
+													        <i class="fa fa-check icon"></i>
+													      </span>
+													    </span>
+													  </label>
+													</div>
+									            </td>
+									            <td>
+									            	<div>
+													  <label class="label">
+													    <input  class="label__checkbox" type="checkbox" (click)="addStatus(5, ref.id, $event, ref.idusuarios, ref.nombre)" [checked]="proceso[i].etapa5"/>
+													    <span class="label__text">
+													      <span class="label__check">
+													        <i class="fa fa-check icon"></i>
+													      </span>
+													    </span>
+													  </label>
+													</div>
+									            </td>
+									            <td>
+									            	<div>
+													  <label class="label">
+													    <input  class="label__checkbox" type="checkbox" (click)="addStatus(6, ref.id, $event, ref.idusuarios, ref.nombre)" [checked]="proceso[i].etapa6"/>
+													    <span class="label__text">
+													      <span class="label__check">
+													        <i class="fa fa-check icon"></i>
+													      </span>
+													    </span>
+													  </label>
+													</div>
+									            </td>
+									            <td>
+																<div class="row">
+										            	<div class="col-md-12">
+																	  <label class="label">
+																	    <input  class="label__checkbox" type="checkbox" (click)="addStatus(7, ref.id, $event, ref.idusuarios, ref.nombre)" [checked]="proceso[i].etapa7"/>
+																	    <span class="label__text">
+																	      <span class="label__check">
+																	        <i class="fa fa-check icon"></i>
+																	      </span>
+																	    </span>
+																	  </label>
+																	</div>
+																</div>
+																<!-- Descomentar si el reclutador asignara los bonus de 3 meses
+																	<div class="row">
+																		<div class="col-md-3">
+																			<label class="label">
+																				<input class="label__checkbox" type="checkbox" (click)="addStatus(30, ref.id, $event, ref.idusuarios, ref.nombre)" [checked]="proceso[i].bonustresmeses"/>
+																				<span class="label__text">
+																					<span class="label__check">
+																						<i class="fa fa-usd icon"></i>
+																					</span>
+																				</span>
+																			</label>
+																		</div>
+																		<div class="col-md-6 bonus-padding-top">
+																			<span>Bonus</span>
+																		</div>
+																	</div>
+																-->
+									            </td>
+									            <td>
+									            	<div class="row">
+																	<div class="col-md-12">
+																	  <label class="label">
+																	    <input  class="label__checkbox" type="checkbox" (click)="addStatus(8, ref.id, $event, ref.idusuarios, ref.nombre)" [checked]="proceso[i].etapa8"/>
+																	    <span class="label__text">
+																	      <span class="label__check">
+																	        <i class="fa fa-check icon"></i>
+																	      </span>
+																	    </span>
+																	  </label>
+																	</div>
+																</div>
+																<!-- Descomentar si el reclutador asignara los bomnus de 6 meses
+																	<div class="row">
+																		<div class="col-md-3">
+																			<label class="label">
+																				<input class="label__checkbox" type="checkbox" (click)="addStatus(60, ref.id, $event, ref.idusuarios, ref.nombre)" [checked]="proceso[i].bonusseismeses"/>
+																				<span class="label__text">
+																					<span class="label__check">
+																						<i class="fa fa-usd icon"></i>
+																					</span>
+																				</span>
+																			</label>
+																		</div>
+																		<div class="col-md-6 bonus-padding-top">
+																			<span>Bonus</span>
+																		</div>
+																	</div>
+																-->
+									            </td>
+									            <td>
+									        		<!--<button [routerLink]="['/edit-referral',ref.id]" class="btn faurecia-azul waves-light btnTabla" mdbWavesEffect>Edit</button>-->
+									        		<button i18n="@@referralsseeRecruVerID" (click)="show( ref.idusuarios )" class="btn faurecia-rosa waves-light btnTabla" mdbWavesEffect>Ver</button>
+									            </td>
+									        </tr>
+									    </tbody>
+									    <!--Table body-->
+									</table>
+
+									<h4 i18n="@@referralsseeRecruTituloTraineesID">Candidatos recomendados como Practicantes</h4>
+									<div class="row justify-content-center">
+							        <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+							            <table class="table table-responsive" style="display: table;">
+							            	<thead class="blue-grey lighten-4">
+							            		<tr>
+															 <th>#</th>
+															 <th i18n="@@referralsseeRecruTablaTraineeOpcionesID">Opciones</th>
+							            		</tr>
+							            	</thead>
+														<tbody *ngFor="let trainee of referralTrainee">
+															<tr>
+																<td>
+																	<a><h5 [routerLink]="['/my-referral',trainee.id]"><span class="badge faurecia-azul referral-name">{{trainee.nombre}}</span></h5></a>
+																</td>
+																<td>
+																	<button i18n="@@referralsseeRecruTablaTraineesSeeID" (click)="show( trainee.idusuarios )" class="btn faurecia-rosa waves-light btnTabla" mdbWavesEffect>Ver</button>
+																</td>
+															</tr>
+														</tbody>
+							            </table>
+							        </div>
+							    </div>
+						    </div>
+						</div>
+
+						<div mdbModal #content="mdbModal" class="modal fade right" tabindex="-1" role="dialog" aria-labelledby="myBasicModalLabel"
+  aria-hidden="true">
+						  <div class="modal-dialog modal-full-height modal-right" role="document">
+						    <div class="modal-content">
+						      <div class="modal-header">
+						        <button type="button" class="close pull-right" aria-label="Close" (click)="content.hide()">
+						          <span aria-hidden="true">×</span>
+						        </button>
+						        <h4 i18n="@@referralsseeRecruModalTituloID" class="modal-title w-100" id="myModalLabel">Referencia de: {{userNormal.nombre}}</h4>
+						      </div>
+						      <div class="modal-body">
+						        <div class="row">
+											<div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 text-center">
+												<div *ngIf="!userNormal.urlimage">
+													<img src="assets/img/UserFace.png" class="img-profile" alt="Card image with a tree in a middle of a lake.">
+												</div>
+												<div *ngIf="userNormal.urlimage">
+													<img src="{{userNormal.urlimage}}" class="img-profile" alt="Card image with a tree in a middle of a lake.">
+												</div>
+											</div>
+						        </div>
+										<div class="row">
+											<div class="col-md-12 col-lg-12 col-xl-12 text-center">
+												<h4 i18n="@@referralsseeRecruModalNombreID" style="padding-top: 20px;" class="title-profile">Nombre: <strong class="text-profile">{{userNormal.nombre}}</strong></h4>
+												<h4 i18n="@@referralsseeRecruModalEmailID" class="title-profile">Email: <strong class="text-profile">{{userNormal.email}}</strong></h4>
+												<h4 i18n="@@referralsseeRecruModalPhoneID" class="title-profile">Teléfono: <strong class="text-profile">{{userNormal.phone}}</strong></h4>
+												<h4 i18n="@@referralsseeRecruModalPositionID" class="title-profile">Posición: <strong class="text-profile">{{userNormal.status}}</strong></h4>
+										    <h4 i18n="@@referralsseeRecruModalAreaID" class="title-profile">Área: <strong class="text-profile">{{userNormal.area1}}</strong></h4>
+								      </div>
+										</div>
+						      </div>
+						      <div class="modal-footer">
+						        <button i18n="@@referralsseeRecruModalCloseID" class="btn faurecia-rosa waves-light" aria-label="Close" (click)="content.hide()" mdbWavesEffect>Cerrar</button>
+						      </div>
+						    </div>
+						  </div>
+						</div>
+
+			</div>
+			<!--/.Card-->
+	    </div>
+
+	</div>
+	<!--/.Card-->
+</div>
+
+<!-- else if -->
+
+<app-footer></app-footer>

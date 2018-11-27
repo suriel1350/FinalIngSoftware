@@ -1,0 +1,168 @@
+
+<!--If user has not logged in then-->
+<div *ngIf="!identity">
+	<app-navbar></app-navbar>
+
+	<!--Card-->
+	<div class="card card-cascade wider reverse my-4">
+
+	    <!--Card image-->
+	    <div class="view view-cascade overlay waves-light" mdbWavesEffect>
+	        <img src="assets/img/benefits.png" class="img-fluid">
+	        <a>
+	            <div class="mask rgba-white-slight"></div>
+	        </a>
+	    </div>
+	    <!--/Card image-->
+
+	    <!--Card content-->
+	    <div class="card-body card-body-cascade text-center">
+	        <!--Title-->
+	        <h4 class="card-title"><strong>Please, log in into your account</strong></h4>
+	        <h5 class="indigo-text"><strong>Go to log in section</strong></h5>
+
+	        <p class="card-text">
+	        </p>
+
+	        <!--Linkedin-->
+	        <a class="icons-sm li-ic"><i class="fa fa-linkedin px-2"> </i></a>
+	        <!--Twitter-->
+	        <a class="icons-sm tw-ic"><i class="fa fa-twitter px-2"> </i></a>
+	        <!--Dribbble-->
+	        <a class="icons-sm fb-ic"><i class="fa fa-facebook px-2"> </i></a>
+
+	    </div>
+	    <!--/.Card content-->
+
+	</div>
+	<!--/.Card-->
+</div>
+<!-- else if -->
+
+
+<div *ngIf="identity">
+<!-- If user has logged in the  -->
+  <div *ngIf="identity.role=='ROLE_USER'">
+    <app-navbarlogged></app-navbarlogged>
+
+    <div class="view view-cascade overlay waves-light" mdbWavesEffect>
+        <img src="assets/img/benefits.png" class="img-fluid">
+        <a>
+            <div class="mask rgba-white-slight"></div>
+        </a>
+    </div>
+    <!--/Card image-->
+
+    <!--Card content-->
+    <div class="card-body card-body-cascade text-center">
+        <!--Title-->
+        <h4 class="card-title"><strong>View only for Administrators</strong></h4>
+        <h5 class="indigo-text"><strong>Go to another section</strong></h5>
+
+        <p class="card-text">
+        </p>
+
+        <!--Linkedin-->
+        <a class="icons-sm li-ic"><i class="fa fa-linkedin px-2"> </i></a>
+        <!--Twitter-->
+        <a class="icons-sm tw-ic"><i class="fa fa-twitter px-2"> </i></a>
+        <!--Dribbble-->
+        <a class="icons-sm fb-ic"><i class="fa fa-facebook px-2"> </i></a>
+
+    </div>
+  </div>
+	<div *ngIf="identity.role == 'ROLE_ADMIN'">
+		<app-navbaradmin></app-navbaradmin>
+
+		<!--Card-->
+		<div class="card">
+
+		    <!--Card content-->
+		    <div class="card-body">
+				<!--Card-->
+				<div class="card">
+
+					<div class="container">
+						<div class="row">
+							<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+								<!--Card content-->
+							    <div class="card-body text-center">
+							        <!--Title-->
+							        <h1 class="card-title">Hello {{userNormal.nombre}}
+                        <button [routerLink]="['/edit-profile']" class="btn faurecia-azul waves-light"  mdbWavesEffect>Edit Profile</button>
+                        <button [routerLink]="['/inicio']" class="btn faurecia-rosa waves-light"  mdbWavesEffect>Back to Home</button>
+                      </h1>
+							        <div class="row">
+							        	<div class="col-md-6">
+								        	<!--IMG-->
+									        <div *ngIf="!userNormal.urlimage">
+									       		<img src="assets/img/UserFace.png" class="img-profile" alt="Card image with a tree in a middle of a lake.">
+									       	</div>
+
+									       	<div *ngIf="userNormal.urlimage">
+									       		<img src="{{userNormal.urlimage}}" class="img-profile" alt="Card image with a tree in a middle of a lake.">
+									       	</div>
+								        </div>
+
+								        <div class="col-md-6">
+										    <h3 class="title-profile">Your Points: <span class="badge faurecia-rosa">{{totalUserPoints}}</span></h3>
+										    <p class="card-text">You get the next gift</p>
+									    </div>
+								    </div>
+							    </div>
+							</div>
+							<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 text-center">
+								  <!--First row-->
+								  <div class="row">
+								      <div class="col-md-4">
+										    <h3 class="title-profile">Name: <strong class="text-profile">{{userNormal.nombre}}</strong></h3>
+								      </div>
+
+								      <div class="col-md-4">
+										    <h3 class="title-profile">First Last name: <strong class="text-profile">{{userNormal.firstlastname}}</strong></h3>
+								      </div>
+
+								      <div class="col-md-4">
+										    <h3 class="title-profile">Second Last name: <strong class="text-profile">{{userNormal.secondlastname}}</strong></h3>
+								      </div>
+								  </div>
+								  <!--/.First row-->
+
+								  <!--Second row-->
+								  <div class="row">
+								      <div class="col-md-6">
+										    <h3 class="title-profile">Email: <strong class="text-profile">{{userNormal.email}}</strong></h3>
+								      </div>
+
+								      <div class="col-md-6">
+										    <h3 class="title-profile">Phone: <strong class="text-profile">{{userNormal.phone}}</strong></h3>
+								      </div>
+								  </div>
+								  <!--/.Second row-->
+
+								  <!--Third row-->
+								  <div class="row">
+								      <div class="col-md-6">
+										    <h3 class="title-profile">Position: <strong class="text-profile">{{userNormal.status}}</strong></h3>
+								      </div>
+
+								      <div class="col-md-6">
+										    <h3 class="title-profile">Area: <strong class="text-profile">{{userNormal.area1}}</strong></h3>
+								      </div>
+								  </div>
+								  <!--/.Third row-->
+							</div>
+						</div>
+					</div>
+
+				</div>
+				<!--/.Card-->
+		    </div>
+
+		</div>
+		<!--/.Card-->
+	</div>
+</div>
+	<!-- else if -->
+
+<app-footer></app-footer>

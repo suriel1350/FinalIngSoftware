@@ -1,0 +1,407 @@
+
+<!--If user has not logged in then-->
+<div *ngIf="!identity">
+	<app-navbar></app-navbar>
+
+	<!--Card-->
+	<div class="card card-cascade wider reverse my-4">
+
+	    <!--Card image-->
+	    <div class="view view-cascade overlay waves-light" mdbWavesEffect>
+	        <img src="assets/img/benefits.png" class="img-fluid">
+	        <a>
+	            <div class="mask rgba-white-slight"></div>
+	        </a>
+	    </div>
+	    <!--/Card image-->
+
+	    <!--Card content-->
+	    <div class="card-body card-body-cascade text-center">
+	        <!--Title-->
+	        <h4 class="card-title"><strong>Please, log in into your account</strong></h4>
+	        <h5 class="indigo-text"><strong>Go to log in section</strong></h5>
+
+	        <p class="card-text">
+	        </p>
+
+	        <!--Linkedin-->
+	        <a class="icons-sm li-ic"><i class="fa fa-linkedin px-2"> </i></a>
+	        <!--Twitter-->
+	        <a class="icons-sm tw-ic"><i class="fa fa-twitter px-2"> </i></a>
+	        <!--Dribbble-->
+	        <a class="icons-sm fb-ic"><i class="fa fa-facebook px-2"> </i></a>
+
+	    </div>
+	    <!--/.Card content-->
+
+	</div>
+	<!--/.Card-->
+</div>
+<!-- else if -->
+
+
+
+<!-- If user has logged in the  -->
+<div *ngIf="identity">
+	<div *ngIf="identity.role=='ROLE_ADMIN'">
+		<app-navbaradmin></app-navbaradmin>
+	</div>
+	<div *ngIf="identity.role=='ROLE_USER'">
+		<app-navbarlogged></app-navbarlogged>
+	</div>
+
+	<!--Card-->
+	<div class="card">
+
+	    <!--Card content-->
+	    <div class="card-body">
+			<!--Card-->
+			<div class="card">
+
+				<div class="container">
+					<div class="row">
+						<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+							<!--Card content-->
+						    <div class="card-body text-center">
+						        <!--Title-->
+						        <h4 i18n="@@referralNewTituloID" class="card-title">Nueva Referencia <button [routerLink]="['/referrals']" class="btn faurecia-azul waves-light" mdbWavesEffect>Volver al menú</button></h4>
+						        <!--Text-->
+						        <p i18n="@@referralNewDescripcionID" class="card-text">Si el desempeño de tu candidato es bueno, es tiempo de recomendarlo.</p>
+						    </div>
+						</div>
+						<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+							<form>
+							  <!--First row-->
+							  <div class="row">
+							      <div class="col-md-4">
+							          <div class="md-form">
+									    <input mdbInputDirective type="text" class="form-control" #nombre="ngModel" name="nombre" [(ngModel)]="referral.nombre">
+									    <label i18n="@@referralNewNombreID" for="form9">Nombre</label>
+									  </div>
+							      </div>
+
+							      <div class="col-md-4">
+							          <div class="md-form">
+									    <input mdbInputDirective type="text" class="form-control" #lastname="ngModel" name="lastname" [(ngModel)]="referral.lastname">
+									    <label i18n="@@referralNewApellidoID" for="form9">Apellido</label>
+									  </div>
+							      </div>
+
+							      <div class="col-md-4">
+							          <div class="md-form">
+									    <input mdbInputDirective type="email" class="form-control" #email="ngModel" name="email" [(ngModel)]="referral.email">
+									    <label i18n="@@referralNewEmailID" for="form9">Correo electrónico</label>
+									  </div>
+							      </div>
+
+							      <!--<div class="col-md-3">
+							          <div class="md-form">
+									    <input mdbInputDirective type="number" class="form-control" #edad="ngModel" name="edad" [(ngModel)]="referral.edad">
+									    <label for="form9">Age</label>
+									  </div>
+									</div>-->
+							  </div>
+							  <!--/.First row-->
+
+							  <!--Second row-->
+							  <div class="row">
+									<div class="col-md-4">
+							          <div class="md-form">
+									    <input mdbInputDirective type="text" class="form-control" #phone="ngModel" name="phone" [(ngModel)]="referral.phone">
+									    <label i18n="@@referralNewTelefonoID" for="form9">Teléfono</label>
+									  </div>
+							      	</div>
+
+							  		<div class="col-md-4">
+							          <div class="md-form">
+									    <input mdbInputDirective type="text" class="form-control" #socialnetwork="ngModel" name="socialnetwork" [(ngModel)]="referral.socialnetwork">
+									    <label i18n="@@referralNewRedSocialID" for="form9">Red Social</label>
+									  </div>
+							      	</div>
+
+											<!--
+											<div class="col-md-3">
+												<div class="md-form">
+											    <input mdbInputDirective type="text" class="form-control" #lastposition="ngModel" name="lastposition" [(ngModel)]="referral.lastposition">
+											    <label for="form9">Current Trainee Position</label>
+											  </div>
+											</div> -->
+
+							      	<div class="col-md-4 form">
+							          <div class="file-upload-wrapper" data-text="Select your file!">
+									   <input name="file-upload-field" id="file-cv" type="file" (change)="fileChangeEvent($event)" class="file-upload-field" value="">
+									  </div>
+							      	</div>
+							  </div>
+							  <!--/.Second row-->
+
+							  <!--Third row-->
+							  <div class="row">
+							  		<div class="col-md-6">
+							          <div class="md-form">
+									    <textarea mdbInputDirective type="text" class="md-textarea form-control" #experience="ngModel" name="experience" [(ngModel)]="referral.experience"></textarea>
+									    <label i18n="@@referralNewExperienciaID" for="form9">Experiencia</label>
+									  </div>
+							      	</div>
+
+							      	<div class="col-md-6">
+							          <div class="md-form">
+									    <textarea mdbInputDirective type="text" class="md-textarea form-control" #area="ngModel" name="area" [(ngModel)]="referral.area"></textarea>
+									    <label i18n="@@referralNewAreaID" for="form9">Área</label>
+									  </div>
+							      	</div>
+							  </div>
+							  <!--/.Third row-->
+
+								<!--Fifth row-->
+								<div class="row">
+									<div class="col-md-6">
+										<h6 i18n="@@referralNewUbicacionRecluID" class="labels-for-select">Ubicación del reclutador</h6>
+										<angular2-multiselect [(ngModel)]="firstname" name="something" [data]="locationList"
+														[(ngModel)]="selectedLocation"
+														[settings]="settings"
+														(onSelect)="onItemSelect($event)"
+														(onDeSelect)="OnItemDeSelect($event)"
+														(onSelectAll)="onSelectAll($event)"
+														(onDeSelectAll)="onDeSelectAll($event)">
+										</angular2-multiselect>
+									</div>
+
+									<div class="col-md-6">
+										<h6 i18n="@@referralNewReclutadorID" class="labels-for-select">Reclutador</h6>
+										<angular2-multiselect [(ngModel)]="secondname" name="something" [data]="recruiterList"
+														[(ngModel)]="selectedRecruiter"
+														[settings]="settingsRecruiter"
+														(onSelect)="onRecruiterSelect($event)"
+														(onDeSelect)="OnRecruiterDeSelect($event)"
+														(onSelectAll)="onSelectAllRecruiter($event)"
+														(onDeSelectAll)="onDeSelectAllRecruiter($event)">
+										</angular2-multiselect>
+									</div>
+								</div>
+
+
+
+								<br>
+
+								<div class="row">
+									<div class="col-md-6">
+										<h6 i18n="@@referralNewAreaUnoID" class="labels-for-select">Área</h6>
+										<angular2-multiselect [(ngModel)]="thirdname" name="something" [data]="areaList"
+														[(ngModel)]="selectedArea"
+														[settings]="settingsArea"
+														(onSelect)="onAreaSelect($event)"
+														(onDeSelect)="OnAreaDeSelect($event)"
+														(onSelectAll)="onSelectAllArea($event)"
+														(onDeSelectAll)="onDeSelectAllArea($event)">
+										</angular2-multiselect>
+									</div>
+
+									<div class="col-md-6" *ngIf="!anotherPosition">
+										<h6 i18n="@@referralNewPosicionUnoID" class="labels-for-select">Posición</h6>
+										<angular2-multiselect [(ngModel)]="fourthname" name="something" [data]="puestoList"
+														[(ngModel)]="selectedPuesto"
+														[settings]="settingsPuesto"
+														(onSelect)="onPuestoSelect($event)"
+														(onDeSelect)="OnPuestoDeSelect($event)"
+														(onSelectAll)="onSelectAllPuesto($event)"
+														(onDeSelectAll)="onDeSelectAllPuesto($event)">
+										</angular2-multiselect>
+									</div>
+
+									<div class="col-md-6" *ngIf="anotherPosition">
+										<div class="md-form">
+											<input mdbInputDirective type="text" class="form-control" name="anotherPuesto" [(ngModel)]="anotherPuesto">
+											<label i18n="@@referralNewPosicionID" for="form9">Escribe la posición</label>
+										</div>
+									</div>
+								</div>
+								<!--/.Fifth row-->
+
+								<br>
+
+								<div class="row">
+									<div class="col-md-6">
+										<h6 i18n="@@referralNewAreaDosID" class="labels-for-select">Segunda área</h6>
+										<angular2-multiselect [(ngModel)]="segundoname" name="somethingdos" [data]="areaListDos"
+														[(ngModel)]="selectedAreaDos"
+														[settings]="settingsAreaDos"
+														(onSelect)="onAreaSelectDos($event)"
+														(onDeSelect)="OnAreaDeSelectDos($event)"
+														(onSelectAll)="onSelectAllAreaDos($event)"
+														(onDeSelectAll)="onDeSelectAllAreaDos($event)">
+										</angular2-multiselect>
+									</div>
+
+									<div class="col-md-6" *ngIf="!anotherPositionDos">
+										<h6 i18n="@@referralNewPosicionDosID" class="labels-for-select">Segunda posición</h6>
+										<angular2-multiselect [(ngModel)]="tercername" name="somethingdos" [data]="puestoListDos"
+														[(ngModel)]="selectedPuestoDos"
+														[settings]="settingsPuestoDos"
+														(onSelect)="onPuestoSelectDos($event)"
+														(onDeSelect)="OnPuestoDeSelectDos($event)"
+														(onSelectAll)="onSelectAllPuestoDos($event)"
+														(onDeSelectAll)="onDeSelectAllPuestoDos($event)">
+										</angular2-multiselect>
+									</div>
+
+									<div class="col-md-6" *ngIf="anotherPositionDos">
+										<div class="md-form">
+											<input mdbInputDirective type="text" class="form-control" name="anotherPuestoDos" [(ngModel)]="anotherPuestoDos">
+											<label i18n="@@referralNewSegundaPosicionID" for="form9">Escribe la segunda posición</label>
+										</div>
+									</div>
+								</div>
+								<!--/.Fifth row-->
+
+								<br><br>
+
+								<div class="row">
+									<div class="col text-right align-self-center">
+									  <h6 i18n="@@referralNewPreguntaID" class="card-title">¿Tu candidato es para una posición de trainee?</h6>
+									</div>
+									<div class="col text-left align-self-center">
+										<button i18n="@@referralNewPreguntaSiID" (click)="statusOfCandidate('Trainee')" class="btn faurecia-rosa waves-light btnRefNew" mdbWavesEffect>Si</button>
+										<button i18n="@@referralNewPreguntaNoID" (click)="statusOfCandidate('Recommended')" class="btn faurecia-azul waves-light btnRefNew" mdbWavesEffect>No</button>
+									</div>
+								</div>
+
+								<br>
+
+								<div class="row">
+									<div class="col-md-12 text-center">
+									  <h6 i18n="@@referralNewStatusID" class="card-title">Estatus: <span style="color: #747373;">{{candidateStatus}}</span></h6>
+									</div>
+								</div>
+
+								<br>
+
+							  <!--Third row-->
+							  <div class="row">
+									<div class="col-md-6">
+										<h6 i18n="@@referralNewCarreraID" class="labels-for-select">Carrera</h6>
+										<angular2-multiselect [(ngModel)]="careername" name="something" [data]="itemListCarrera"
+														[(ngModel)]="selectedItemsCarrera"
+														[settings]="settingSitiosCarrera"
+														(onSelect)="onCareerSelect($event)"
+														(onDeSelect)="OnCareerDeSelect($event)"
+														(onSelectAll)="onSelectAllCareer($event)"
+														(onDeSelectAll)="onDeSelectAllCareer($event)">
+										</angular2-multiselect>
+									</div>
+
+									<div class="col-md-6">
+										<h6 i18n="@@referralNewUniversidadID" class="labels-for-select">Universidad</h6>
+										<angular2-multiselect [(ngModel)]="universityname" name="something" [data]="itemListUniversidades"
+														[(ngModel)]="selectedItemsUniversidades"
+														[settings]="settingSitiosUniversidades"
+														(onSelect)="onUniversitySelect($event)"
+														(onDeSelect)="OnUniversityDeSelect($event)"
+														(onSelectAll)="onSelectAllUniversity($event)"
+														(onDeSelectAll)="onDeSelectAllUniversity($event)">
+										</angular2-multiselect>
+									</div>
+							  </div>
+							  <!--/.Third row-->
+
+								<br>
+
+							  <!--Fourth row-->
+							  <div class="row">
+							  			<div class="col-md-4">
+												<h6 i18n="@@referralNewGeneroID" class="labels-for-select">Género</h6>
+												<angular2-multiselect [(ngModel)]="genrername" name="something" [data]="generoList"
+																[(ngModel)]="selectedGenero"
+																[settings]="settingsGenero"
+																(onSelect)="onGeneroSelect($event)"
+																(onDeSelect)="OnGeneroDeSelect($event)"
+																(onSelectAll)="onSelectAllGenero($event)"
+																(onDeSelectAll)="onDeSelectAllGenero($event)">
+												</angular2-multiselect>
+							      	</div>
+
+											<!-- Descomentar esta seccion si se quiere poner english level con numeros de 0 a 100
+							      	<div class="col-md-4">
+							          <div class="md-form">
+											    <input mdbInputDirective type="text" class="form-control" #englishlevel="ngModel" name="englishlevel" [(ngModel)]="referral.englishlevel">
+											    <label for="form9">English level</label>
+											  </div>
+							      	</div>-->
+											<div class="col-md-4">
+												<h6 i18n="@@referralNewNivelDeInglesID" class="labels-for-select">Nivel de Inglés</h6>
+												<angular2-multiselect [(ngModel)]="englishname" name="something" [data]="englishList"
+																[(ngModel)]="selectedEnglish"
+																[settings]="settingsEnglish"
+																(onSelect)="onEnglishSelect($event)"
+																(onDeSelect)="OnEnglishDeSelect($event)"
+																(onSelectAll)="onSelectAllEnglish($event)"
+																(onDeSelectAll)="onDeSelectAllEnglish($event)">
+												</angular2-multiselect>
+											</div>
+
+											<div class="col-md-4">
+												<h6 i18n="@@referralNewEstadoID" class="labels-for-select">Estado de Residencia</h6>
+												<angular2-multiselect [(ngModel)]="estadoname" name="something" [data]="itemListEstado"
+																[(ngModel)]="selectedItemsEstado"
+																[settings]="settingSitiosEstado"
+																(onSelect)="onEstadoSelect($event)"
+																(onDeSelect)="OnEstadoDeSelect($event)"
+																(onSelectAll)="onSelectAllEstado($event)"
+																(onDeSelectAll)="onDeSelectAllEstado($event)">
+												</angular2-multiselect>
+											</div>
+
+							  </div>
+							  <!--/.Fourth row-->
+
+							  <!--Buttons Row -->
+							  <div class="row" *ngIf="(lockButtonLocation == true && lockButtonRecruiter == true && lockButtonArea == true && lockButtonPosition == true && lockButtonCareer == true && lockButtonUniversity == true && lockButtonState == true && lockButtonGenrer == true && lockButtonEnglish == true && referral.nombre.length > 0 && referral.lastname.length > 0 && referral.email.length > 0 && referral.phone.length > 0 && referral.lastposition.length > 0)">
+							  		<div class="col-md-12 text-center">
+									  	<button i18n="@@referralNewBotonCrearID" (click)="policyPrivacy()" class="btn faurecia-rosa waves-light" [disabled]="lockButton"  mdbWavesEffect>Crear Referido</button>
+									</div>
+							  </div>
+								<br><br>
+							  <!--/.Buttons Row -->
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--/.Card-->
+	    </div>
+
+	</div>
+	<!--/.Card-->
+
+	<!--Modal Politica de provacidad-->
+	<div mdbModal #politica="mdbModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myBasicModalLabel"
+	aria-hidden="true">
+		<div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close pull-right" aria-label="Close" (click)="politica.hide()">
+						<span aria-hidden="true">×</span>
+					</button>
+					<h4 i18n="@@referralNewModalTituloID" class="modal-title w-100" id="myModalLabel">Aviso de Privacidad</h4>
+				</div>
+				<div class="modal-body">
+					<div class="row">
+						<div class="col-md-12 col-lg-12 col-xl-12 text-center">
+							<p i18n="@@referralNewModalContenidoID">SERVICIOS CORPORATIVOS DE PERSONAL ESPECIALIZADO S.A. DE C.V.; EXHAUST SERVICES MEXICANA S.A. DE C.V.; ET HOLDINGS II S. DE R.L. DE C.V. Y FAURECIA SISTEMAS AUTOMOTRICES DE MÉXICO, S.A. DE C.V. (en lo sucesivo “Faurecia”) con domicilio en 4to Retorno Osa Menor #2 Int. 41, Colonia Reserva Territorial Atlixcayotl, San Andrés Cholula, Puebla, México. CP 72810, es responsable de su información personal. Para conocer el tratamiento, así como los procedimientos y requisitos para ejercer sus derechos ARCO, revocar su consentimiento o limitar el uso de su información personal, revise nuestro aviso de privacidad integral en www.mifaurecia.com.mx</p>
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button i18n="@@referralNewModalAcuerdoID" class="btn faurecia-azul waves-light" aria-label="Close" (click)="upload(true)" mdbWavesEffect>Estoy de Acuerdo</button>
+					<button i18n="@@referralNewModalDesacuerdoID" class="btn faurecia-rosa waves-light" aria-label="Close" (click)="upload(false)" mdbWavesEffect>No estoy de Acuerdo</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--Modal ends-->
+
+</div>
+
+<!-- else if -->
+
+<app-footer></app-footer>

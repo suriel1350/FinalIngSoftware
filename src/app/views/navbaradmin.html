@@ -1,0 +1,31 @@
+<mdb-navbar SideClass="navbar navbar-expand-lg navbar-dark my-color">
+
+    <!-- Navbar brand -->
+    <mdb-navbar-brand><a class="navbar-brand" [routerLink]="['/inicio']">Faurecia</a></mdb-navbar-brand>
+
+    <!-- Collapsible content -->
+    <links>
+
+        <!-- Links -->
+        <ul class="navbar-nav mr-auto">
+            <li routerLinkActive="active" [routerLink]="['/inicio']" class="nav-item">
+                <a class="nav-link waves-light" mdbWavesEffect>Home</a>
+            </li>
+            <li routerLinkActive="active" [routerLink]="['/admin-profile']" class="nav-item">
+                <a class="nav-link waves-light" mdbWavesEffect>Profile</a>
+            </li>
+            <li routerLinkActive="active" [routerLink]="['/referrals']" class="nav-item">
+                <a class="nav-link waves-light" mdbWavesEffect>My Referrals</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link waves-light" mdbWavesEffect><mdb-icon icon="bell"></mdb-icon><span class="badge faurecia-rosa">Instructions</span></a>
+            </li>
+            <li (click)="logout()" class="nav-item active">
+                <a class="nav-link waves-light" mdbWavesEffect>Logout</a>
+            </li>
+        </ul>
+        <!-- Links -->
+    </links>
+    <!-- Collapsible content -->
+
+</mdb-navbar>

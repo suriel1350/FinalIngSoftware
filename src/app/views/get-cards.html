@@ -1,0 +1,164 @@
+
+<!--If user has not logged in then-->
+<div *ngIf="!identity">
+	<app-navbar></app-navbar>
+
+	<!--Card-->
+	<div class="card card-cascade wider reverse my-4">
+
+	    <!--Card image-->
+	    <div class="view view-cascade overlay waves-light" mdbWavesEffect>
+	        <img src="assets/img/benefits.png" class="img-fluid">
+	        <a>
+	            <div class="mask rgba-white-slight"></div>
+	        </a>
+	    </div>
+	    <!--/Card image-->
+
+	    <!--Card content-->
+	    <div class="card-body card-body-cascade text-center">
+	        <!--Title-->
+	        <h4 class="card-title"><strong>Please, log in into your account</strong></h4>
+	        <h5 class="indigo-text"><strong>Go to log in section</strong></h5>
+
+	        <p class="card-text">
+	        </p>
+
+	        <!--Linkedin-->
+	        <a class="icons-sm li-ic"><i class="fa fa-linkedin px-2"> </i></a>
+	        <!--Twitter-->
+	        <a class="icons-sm tw-ic"><i class="fa fa-twitter px-2"> </i></a>
+	        <!--Dribbble-->
+	        <a class="icons-sm fb-ic"><i class="fa fa-facebook px-2"> </i></a>
+
+	    </div>
+	    <!--/.Card content-->
+
+	</div>
+	<!--/.Card-->
+</div>
+<!-- else if -->
+
+
+
+<!-- If user has logged in the  -->
+<div *ngIf="identity">
+	<div *ngIf="identity.role=='ROLE_ADMIN'">
+		<app-navbaradmin></app-navbaradmin>
+	</div>
+	<div *ngIf="identity.role=='ROLE_USER'">
+		<app-navbarlogged></app-navbarlogged>
+	</div>
+
+	<!--Card-->
+	<div class="card">
+
+		<div class="container">
+			<div class="row">
+				<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+					<!--Card content-->
+						<div class="card-body text-center animated slideInDown">
+								<h1 class="card-title">
+									<div class="buttonDisplay" *ngIf="identity.role=='ROLE_USER'">
+										<button i18n="@@getCardsVolverInicioUserID" [routerLink]="['/inicio']" class="btn faurecia-azul waves-light"  mdbWavesEffect>Volver a Inicio</button>
+									</div>
+									<div class="buttonDisplay" *ngIf="identity.role=='ROLE_RECRUITER'">
+										<button i18n="@@getCardsVolverInicioRecluID" [routerLink]="['/inicio']" class="btn faurecia-azul waves-light"  mdbWavesEffect>Volver a Inicio</button>
+									</div>
+								</h1>
+								<h2 i18n="@@getCardsPuntosActualesID" *ngIf="identity.role=='ROLE_USER'" class="h1">Puntos Actuales: <span class="badge faurecia-rosa">{{totalUserPoints}}</span></h2>
+						</div>
+
+						<div class="card-body card-body-cascade text-center animated rotateInDownLeft">
+				        <!--Title-->
+				        <h4 class="card-title"><strong i18n="@@getCardsClickEnElBotonID">Click en el botón <strong class="indigo-text">Conseguir Tarjeta</strong> para seleccionar la tarjeta de Amazon que deseas canjear</strong></h4>
+
+
+				        <p i18n="@@getCardsSeraEnviadoEmailID" class="card-text">Un correo electrónico será enviado al equipo de Talent Hub solicitando tu tarjeta</p>
+
+				        <p i18n="@@getCardsDentro7DiasID" class="card-text">Dentro de 7 días recibirás tu tarjeta, checa tu correo para la confirmación del reclutador <mdb-icon icon="inbox"></mdb-icon></p>
+
+				    </div>
+				</div>
+				<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 text-center">
+
+						<!--First row-->
+						<div class="row">
+							<div class="col-md-4 text-center">
+								<div>
+									<img [ngClass]="totalUserPoints < 1000 ? 'cardopacidad img-amazon' : 'animated pulse infinite img-amazon'" src="assets/img/1000.png" alt="Amazon Card">
+									<h3 class="mb-1"><button i18n="@@getCardsConseguirTarjeta1000ID" [ngClass]="totalUserPoints < 1000 ? 'disabled' : 'animated pulse infinite'"  (click)="showConfirmation( 1000 )" class="btn faurecia-rosa waves-light btnTabla" mdbWavesEffect>Conseguir Tarjeta</button></h3>
+								</div>
+							</div>
+
+							<div class="col-md-4 text-center">
+								<div>
+									<img src="assets/img/2000.png" [ngClass]="totalUserPoints < 2000 ? 'cardopacidad img-amazon' : 'animated pulse infinite img-amazon'"  alt="Amazon Card">
+									<h3 class="mb-1"><button i18n="@@getCardsConseguirTarjeta2000ID" [ngClass]="totalUserPoints < 2000 ? 'disabled' : 'animated pulse infinite'" (click)="showConfirmation( 2000 )" class="btn faurecia-rosa waves-light btnTabla" mdbWavesEffect>Conseguir Tarjeta</button></h3>
+								</div>
+							</div>
+
+							<div class="col-md-4 text-center">
+								<div>
+									<img src="assets/img/3000.png" [ngClass]="totalUserPoints < 3000 ? 'cardopacidad img-amazon' : 'animated pulse infinite img-amazon'" alt="Amazon Card">
+									<h3 class="mb-1"><button i18n="@@getCardsConseguirTarjeta3000ID" [ngClass]="totalUserPoints < 3000 ? 'disabled' : 'animated pulse infinite'" (click)="showConfirmation( 3000 )" class="btn faurecia-rosa waves-light btnTabla" mdbWavesEffect>Conseguir Tarjeta</button></h3>
+								</div>
+							</div>
+						</div>
+							<br>
+				</div>
+			</div>
+		</div>
+
+	</div>
+	<!--/.Card-->
+
+	<!-- Modal to confirm card selected -->
+	<div mdbModal #confirmation="mdbModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myBasicModalLabel"
+	aria-hidden="true">
+	  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+	    <div class="modal-content">
+				<div class="modal-header">
+	        <button type="button" class="close pull-right" aria-label="Close" (click)="confirmation.hide()">
+	          <span aria-hidden="true">×</span>
+	        </button>
+	        <h4 i18n="@@getCardsConfirmacionTituloID" class="modal-title w-100" id="myModalLabel">Confirmación para tarjeta Amazon de {{confValue}} puntos</h4>
+	      </div>
+	      <div class="modal-body">
+					<div class="row">
+	          <div class="col-md-12 col-lg-12 col-xl-12 text-center">
+	            <p i18n="@@getCardsHasSeleccionadoID" class="mb-1">
+	              Has seleccionado una tarjeta de {{confValue}} puntos
+							</p>
+							<br>
+							<div class="text-center">
+								<div *ngIf="confValue == 1000">
+									<img src="assets/img/1000.png" class="animated zoomInUp img-amazon-modal-confirmation" alt="Amazon Card">
+								</div>
+								<div *ngIf="confValue == 2000">
+									<img src="assets/img/2000.png" class="animated zoomInUp img-amazon-modal-confirmation" alt="Amazon Card">
+								</div>
+								<div *ngIf="confValue == 3000">
+									<img src="assets/img/3000.png" class="animated zoomInUp img-amazon-modal-confirmation" alt="Amazon Card">
+								</div>
+							</div>
+							<br>
+							<p i18n="@@getCardsClickenSolicitarID" class="mb-1">
+								Click en <strong class="indigo-text">Solicitar Tarjeta</strong> para enviar un email al equipo de Talent Hub
+	            </p>
+	          </div>
+	        </div>
+	      </div>
+	      <div class="modal-footer">
+	        <button i18n="@@getCardsCerrarModalID" class="btn faurecia-rosa waves-light" aria-label="Close" (click)="confirmation.hide()" mdbWavesEffect>Cerrar</button>
+	        <button i18n="@@getCardsSolicitarModalID" [ngClass]="buttonStatus == true ? 'disabled' : 'animated swing infinite'" class="btn faurecia-azul waves-light" aria-label="Close" (click)="checkPoints(confValue)" mdbWavesEffect>Solicitar Tarjeta</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+	<!--/.Modal -->
+</div>
+
+<!-- else if -->
+
+<app-footer></app-footer>

@@ -1,0 +1,109 @@
+
+<app-navbar></app-navbar>
+
+<div class="container">
+    <div class="row">
+      <div class="col-md-6 mx-auto my-5">
+        <section class="form-elegant">
+          <!--Form without header-->
+          <div class="card" *ngIf="!loginRecruiter">
+            <div class="card-body mx-4">
+              <!--Header-->
+              <div class="text-center">
+                <h3 class="dark-grey-text">
+                  <strong i18n="@@iniciarsesionID">Iniciar Sesión</strong>
+                </h3>
+                <img src="assets/img/RP.png" class="img-login" alt="Card image with a tree in a middle of a lake.">
+              </div>
+
+              <form #loginForm="ngForm" (ngSubmit)="onSubmit()">
+                <div class="md-form">
+                  <input type="email" class="form-control" mdbInputDirective #email="ngModel" name="email" [(ngModel)]="user.email">
+                  <label i18n="@@correoID" for="elegantFormEmailEx">Correo electrónico</label>
+                </div>
+
+                <div class="md-form pb-3">
+                  <input type="password" class="form-control" mdbInputDirective #password="ngModel" name="password" [(ngModel)]="user.password">
+                  <label i18n="@@contraseniaID" for="elegantFormPasswordEx">Contraseña</label>
+                  <p class="font-small blue-text d-flex justify-content-end">
+                    <a [routerLink]="['/forgot-password']" i18n="@@olvidasteID" class="blue-text ml-1">¿Olvidaste tu contraseña?</a>
+                  </p>
+                </div>
+
+                <div class="text-center mb-3">
+                  <button i18n="@@entrarID" type="submit" name="action" class="btn faurecia-rosa btn-block btn-rounded z-depth-1a waves-light" mdbWavesEffect>Entrar</button>
+                </div>
+              </form>
+              <!--Body-->
+
+
+            </div>
+            <!--Footer-->
+            <div class="modal-footer mx-5 pt-3 mb-1">
+                <p i18n="@@nomiembroID" class="font-small grey-text d-flex justify-content-end">¿No eres miembro?
+                  <a [routerLink]="['/register']" class="blue-text ml-1"> Registrarse</a>
+                </p>
+            </div>
+
+            <div class="my-modal-login mx-5">
+                <p i18n="@@eresreclutadorID" class="font-small grey-text d-flex justify-content-end">¿Eres un reclutador?
+                  <a (click)="enableRecruiter()" class="blue-text ml-1"> Entrar como reclutador</a>
+                </p>
+            </div>
+
+
+          </div>
+
+          <div class="card" *ngIf="loginRecruiter">
+            <div class="card-body mx-4">
+              <!--Header-->
+              <div class="text-center">
+                <h3 class="dark-grey-text">
+                  <strong i18n="@@loginasrecruiterID">Iniciar Sesión como Reclutador</strong>
+                </h3>
+                <img src="assets/img/RP.png" class="img-login" alt="Card image with a tree in a middle of a lake.">
+              </div>
+
+              <form #loginForm="ngForm" (ngSubmit)="onSubmitRecruiter()">
+                <div class="md-form">
+                  <input type="email" class="form-control" mdbInputDirective #email="ngModel" name="email" [(ngModel)]="user.email">
+                  <label i18n="@@emailRecruiterLoginID" for="elegantFormEmailEx">Correo electrónico</label>
+                </div>
+
+                <div class="md-form pb-3">
+                  <input type="password" class="form-control" mdbInputDirective #password="ngModel" name="password" [(ngModel)]="user.password">
+                  <label i18n="@@passwordRecruiterLoginID" for="elegantFormPasswordEx">Contraseña</label>
+                  <p class="font-small blue-text d-flex justify-content-end">
+                    <a i18n="@@forgotPasswordRecruiterLoginID" href="#" class="blue-text ml-1">¿Olvidaste tu contraseña?</a>
+                  </p>
+                </div>
+
+                <div class="text-center mb-3">
+                  <button i18n="@@enterRecruiterID" type="submit" name="action" class="btn faurecia-rosa btn-block btn-rounded z-depth-1a waves-light" mdbWavesEffect>Entrar</button>
+                </div>
+              </form>
+              <!--Body-->
+
+
+            </div>
+            <!--Footer-->
+            <div class="modal-footer mx-5 pt-3 mb-1">
+                <p i18n="@@noEresReclutadorID" class="font-small grey-text d-flex justify-content-end">¿No eres reclutador?
+                  <a (click)="enableLogin()" class="blue-text ml-1"> Ir a login</a>
+                </p>
+            </div>
+
+
+          </div>
+          <!--/Form without header-->
+
+        </section>
+
+      </div>
+
+    </div>
+</div>
+
+<!--Footer-->
+    <app-footer></app-footer>
+<!--/.Footer-->

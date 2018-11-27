@@ -1,0 +1,219 @@
+
+<!--If user has not logged in then-->
+<div *ngIf="!identity">
+	<app-navbar></app-navbar>
+
+	<!--Card-->
+	<div class="card card-cascade wider reverse my-4">
+
+	    <!--Card image-->
+	    <div class="view view-cascade overlay waves-light" mdbWavesEffect>
+	        <img src="assets/img/benefits.png" class="img-fluid">
+	        <a>
+	            <div class="mask rgba-white-slight"></div>
+	        </a>
+	    </div>
+	    <!--/Card image-->
+
+	    <!--Card content-->
+	    <div class="card-body card-body-cascade text-center">
+	        <!--Title-->
+	        <h4 class="card-title"><strong>Please, log in into your account</strong></h4>
+	        <h5 class="indigo-text"><strong>Go to log in section</strong></h5>
+
+	        <p class="card-text">
+	        </p>
+
+	        <!--Linkedin-->
+	        <a class="icons-sm li-ic"><i class="fa fa-linkedin px-2"> </i></a>
+	        <!--Twitter-->
+	        <a class="icons-sm tw-ic"><i class="fa fa-twitter px-2"> </i></a>
+	        <!--Dribbble-->
+	        <a class="icons-sm fb-ic"><i class="fa fa-facebook px-2"> </i></a>
+
+	    </div>
+	    <!--/.Card content-->
+
+	</div>
+	<!--/.Card-->
+</div>
+<!-- else if -->
+
+
+
+<!-- If user has logged in the  -->
+<div *ngIf="identity">
+	<div *ngIf="identity.role=='ROLE_ADMIN'">
+		<app-navbaradmin></app-navbaradmin>
+	</div>
+	<div *ngIf="identity.role=='ROLE_USER'">
+		<app-navbarlogged></app-navbarlogged>
+	</div>
+	<div *ngIf="identity.role=='ROLE_RECRUITER'">
+		<app-navbarrecru></app-navbarrecru>
+	</div>
+
+	<!--Card-->
+	<div class="card">
+
+	    <!--Card content-->
+	    <div class="card-body">
+			<!--Card-->
+			<div class="card">
+
+				<div class="container">
+					<div class="row">
+						<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+							<!--Card content-->
+						    <div class="card-body text-center">
+						        <!--Title-->
+						        <h4 i18n="@@referralShowTituloID" class="card-title">Candidato: {{referral.nombre}}</h4>
+						    </div>
+						</div>
+						<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+
+							  <!--First row-->
+							  <div class="row">
+							      <div class="col-md-4">
+									    <h3 i18n="@@referralShowNombreID" class="title-profile">Nombre: <strong class="text-profile">{{referral.nombre}}</strong></h3>
+							      </div>
+
+							      <div class="col-md-4">
+                      <h3 i18n="@@referralShowApellidoID" class="title-profile">Apellido: <strong class="text-profile">{{referral.lastname}}</strong></h3>
+							      </div>
+
+							      <div class="col-md-4">
+                      <h3 i18n="@@referralShowEmailID" class="title-profile">Correo electrónico: <strong class="text-profile">{{referral.email}}</strong></h3>
+							      </div>
+							  </div>
+							  <!--/.First row-->
+                <br>
+                <br>
+							  <!--Second row-->
+							  <div class="row">
+                  <div class="col-md-4">
+                    <h3 i18n="@@referralShowTelefonoID" class="title-profile">Teléfono: <strong class="text-profile">{{referral.phone}}</strong></h3>
+							    </div>
+
+                  <div class="col-md-4">
+                    <h3 i18n="@@referralShowRedSocialID" class="title-profile">Red Social: <strong class="text-profile">{{referral.socialnetwork}}</strong></h3>
+							    </div>
+
+                  <div class="col-md-4">
+                    <div *ngIf="referral.cv">
+                      <a href="{{referral.cv}}" target="_blank"><h3 class="title-profile"><span i18n="@@referralShowCVID" class="badge faurecia-rosa">Ver CV</span></h3></a>
+                    </div>
+                    <div *ngIf="!referral.cv">
+                      <h3 class="title-profile"><span i18n="@@referralShowNoCVID" class="badge red">No CV</span></h3>
+                    </div>
+                  </div>
+							  </div>
+							  <!--/.Second row-->
+                <br>
+                <br>
+							  <!--Third row-->
+							  <div class="row">
+                  <div class="col-md-4">
+                    <h3 i18n="@@referralShowExperienciaID" class="title-profile">Experiencia: <strong class="text-profile">{{referral.experience}}</strong></h3>
+                  </div>
+
+                  <div class="col-md-4">
+                    <h3 i18n="@@referralShowAreaID" class="title-profile">Área: <strong class="text-profile">{{referral.area}}</strong></h3>
+							    </div>
+
+									<div class="col-md-4">
+                    <h3 i18n="@@referralShowStatusCandidateID" class="title-profile">Estatus del Candidato: <strong class="text-profile">{{referral.lastposition}}</strong></h3>
+							    </div>
+							  </div>
+							  <!--/.Third row-->
+                <br>
+                <br>
+							  <!--Third row-->
+							  <div class="row">
+                  <div class="col-md-6">
+                    <h3 i18n="@@referralShowCarreraID" class="title-profile">Carrera: <strong class="text-profile">{{referral.career}}</strong></h3>
+                  </div>
+
+                  <div class="col-md-6">
+                    <h3 i18n="@@referralShowUniversidadID" class="title-profile">Universidad: <strong class="text-profile">{{referral.university}}</strong></h3>
+							    </div>
+							  </div>
+							  <!--/.Third row-->
+                <br>
+                <br>
+							  <!--Fourth row-->
+							  <div class="row">
+                  <div class="col-md-4">
+                    <h3 i18n="@@referralShowGeneroID" class="title-profile">Género: <strong class="text-profile">{{referral.genero}}</strong></h3>
+                  </div>
+
+                  <div class="col-md-4">
+                    <h3 i18n="@@referralShowNivelInglesID" class="title-profile">Nivel de Inglés: <strong class="text-profile">{{referral.englishlevelstring}}</strong></h3>
+                  </div>
+
+                  <div class="col-md-4">
+                    <h3 i18n="@@referralShowEstadoID" class="title-profile">Estado: <strong class="text-profile">{{referral.estadoresidencia}}</strong></h3>
+                  </div>
+							  </div>
+							  <!--/.Fourth row-->
+								<br>
+								<br>
+								<!--Fifth row-->
+							  <div class="row">
+                  <div class="col-md-6">
+                    <h3 i18n="@@referralShowUbicacionID" class="title-profile">Ubicación: <strong class="text-profile">{{referral.localidadrecruiter}}</strong></h3>
+                  </div>
+
+                  <div class="col-md-6">
+                    <h3 i18n="@@referralShowRecruiterID" class="title-profile">Reclutador: <strong class="text-profile">{{referral.englishlevel}}</strong></h3>
+                  </div>
+							  </div>
+
+								<br>
+								<br>
+
+								<div class="row">
+                  <div class="col-md-6">
+                    <h3 i18n="@@referralShowArea1ID" class="title-profile">Área: <strong class="text-profile">{{referral.areaposition}}</strong></h3>
+                  </div>
+
+									<div class="col-md-6">
+                    <h3 i18n="@@referralShowPosicion1ID" class="title-profile">Posición: <strong class="text-profile">{{referral.nameposition}}</strong></h3>
+                  </div>
+							  </div>
+
+								<div class="row">
+                  <div class="col-md-6">
+                    <h3 i18n="@@referralShowArea2ID" class="title-profile">Segunda Área: <strong class="text-profile">{{referral.areapositiondos}}</strong></h3>
+                  </div>
+
+									<div class="col-md-6">
+                    <h3 i18n="@@referralShowPosicion2ID" class="title-profile">Segunda Posición: <strong class="text-profile">{{referral.namepositiondos}}</strong></h3>
+                  </div>
+							  </div>
+
+
+                <br>
+                <br>
+							  <!--Buttons Row -->
+							  <div class="row">
+							  		<div class="col-md-12 text-center">
+									  	<button i18n="@@referralShowBotonVolverID" [routerLink]="['/see-referrals']" class="btn faurecia-azul waves-light" mdbWavesEffect>Volver al menú</button>
+									</div>
+							  </div>
+							  <!--/.Buttons Row -->
+
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--/.Card-->
+	    </div>
+
+	</div>
+	<!--/.Card-->
+</div>
+
+<!-- else if -->
+
+<app-footer></app-footer>

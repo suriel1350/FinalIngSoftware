@@ -1,0 +1,168 @@
+
+<!--If user has not logged in then-->
+<div *ngIf="!identity">
+	<app-navbar></app-navbar>
+
+	<!--Card-->
+	<div class="card card-cascade wider reverse my-4">
+
+	    <!--Card image-->
+	    <div class="view view-cascade overlay waves-light" mdbWavesEffect>
+	        <img src="assets/img/benefits.png" class="img-fluid">
+	        <a>
+	            <div class="mask rgba-white-slight"></div>
+	        </a>
+	    </div>
+	    <!--/Card image-->
+
+	    <!--Card content-->
+	    <div class="card-body card-body-cascade text-center">
+	        <!--Title-->
+	        <h4 class="card-title"><strong>Please, log in into your account</strong></h4>
+	        <h5 class="indigo-text"><strong>Go to log in section</strong></h5>
+
+	        <p class="card-text">
+	        </p>
+
+	        <!--Linkedin-->
+	        <a class="icons-sm li-ic"><i class="fa fa-linkedin px-2"> </i></a>
+	        <!--Twitter-->
+	        <a class="icons-sm tw-ic"><i class="fa fa-twitter px-2"> </i></a>
+	        <!--Dribbble-->
+	        <a class="icons-sm fb-ic"><i class="fa fa-facebook px-2"> </i></a>
+
+	    </div>
+	    <!--/.Card content-->
+
+	</div>
+	<!--/.Card-->
+</div>
+<!-- else if -->
+
+
+
+<!-- If user has logged in the  -->
+<div *ngIf="identity">
+	<div *ngIf="identity.role=='ROLE_ADMIN'">
+		<app-navbaradmin></app-navbaradmin>
+	</div>
+	<div *ngIf="identity.role=='ROLE_USER'">
+		<app-navbarlogged></app-navbarlogged>
+	</div>
+	<div *ngIf="identity.role=='ROLE_RECRUITER'">
+		<app-navbarrecru></app-navbarrecru>
+	</div>
+
+	<!--Card-->
+	<div class="card">
+
+	    <!--Card content-->
+	    <div class="card-body">
+			<!--Card-->
+			<div class="card">
+
+				<div class="container">
+					<div class="row">
+						<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+							<!--Card content-->
+						    <div class="card-body text-center">
+						        <h1 i18n="@@editarPerfilID" class="card-title">Editar Perfil
+											<div class="buttonDisplay" *ngIf="identity.role=='ROLE_USER'">
+												<button [routerLink]="['/inicio']" class="btn faurecia-azul waves-light"  mdbWavesEffect>Volver a Inicio</button>
+											</div>
+											<div class="buttonDisplay" *ngIf="identity.role=='ROLE_RECRUITER'">
+												<button [routerLink]="['/inicio']" class="btn faurecia-azul waves-light"  mdbWavesEffect>Volver a Inicio</button>
+											</div>
+											<div class="buttonDisplay" *ngIf="identity.role=='ROLE_ADMIN'">
+												<button [routerLink]="['/admin-profile']" class="btn faurecia-rosa waves-light"  mdbWavesEffect>Volver a Perfil</button>
+											</div>
+										</h1>
+						    </div>
+						</div>
+						<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 text-center">
+							<form #loginForm="ngForm" (ngSubmit)="onSubmit()">
+							  <!--First row-->
+							  <div class="row">
+							      <div class="col-md-4">
+							          <div class="md-form">
+									    <input mdbInputDirective type="text" class="form-control" #nombre="ngModel" name="nombre" [(ngModel)]="userNormal.nombre">
+									    <label i18n="@@editarPerfilNombreID" for="form9">Nombre</label>
+									  </div>
+							      </div>
+							      <div class="col-md-4">
+							          <div class="md-form">
+									    <input mdbInputDirective type="text" class="form-control" #firstlastname="ngModel" name="firstlastname" [(ngModel)]="userNormal.firstlastname">
+									    <label i18n="@@editarPerfilPrimerApellidoID" for="form9">Primer Apellido</label>
+									  </div>
+							      </div>
+							      <div class="col-md-4">
+							          <div class="md-form">
+									    <input mdbInputDirective type="text" class="form-control" #secondlastname="ngModel" name="secondlastname" [(ngModel)]="userNormal.secondlastname">
+									    <label i18n="@@editarPerfilSegundoApellidoID" for="form9">Segundo Apellido</label>
+									  </div>
+							      </div>
+							  </div>
+							  <!--/.First row-->
+
+							  <!--Second row-->
+							  <div class="row">
+							      <div class="col-md-4">
+							          <div class="md-form">
+									    <input mdbInputDirective type="email" class="form-control" #email="ngModel" name="email" [(ngModel)]="userNormal.email">
+									    <label i18n="@@editarPerfilEmailID" for="form9">Correo electrónico</label>
+									  </div>
+							      </div>
+							      <div class="col-md-4">
+							          <div class="md-form">
+									    <input mdbInputDirective type="text" class="form-control" #phone="ngModel" name="phone" [(ngModel)]="userNormal.phone">
+									    <label i18n="@@editarPerfilTelefonoID" for="form9">Teléfono</label>
+									  </div>
+							      </div>
+							      <div class="col-md-4 form">
+							          <div class="file-upload-wrapper" data-text="Select your image!">
+									   <input name="file-upload-field" id="file-cv" type="file" (change)="fileChangeEvent($event)" class="file-upload-field" value="">
+									  </div>
+							      </div>
+							  </div>
+							  <!--/.Second row-->
+
+							  <!--Third row-->
+							  <div class="row">
+							      <div class="col-md-6">
+							          <div class="md-form">
+									    <textarea mdbInputDirective type="text" class="md-textarea form-control" #status="ngModel" name="status" [(ngModel)]="userNormal.status"></textarea>
+									    <label i18n="@@editarPerfilPosicionID" for="form9">Posición</label>
+									  </div>
+							      </div>
+							      <div class="col-md-6">
+							          <div class="md-form">
+									    <textarea mdbInputDirective type="text" class="md-textarea form-control" #area1="ngModel" name="area1" [(ngModel)]="userNormal.area1"></textarea>
+									    <label i18n="@@editarPerfilAreaID" for="form9">Área</label>
+									  </div>
+							      </div>
+							  </div>
+							  <!--/.Third row-->
+
+							  <!--Buttons Row -->
+							  <div class="row" *ngIf="userNormal.email">
+							  		<div class="col-md-12 text-center">
+									  	<button i18n="@@editarPerfilGuardarID" type="submit" class="btn faurecia-rosa waves-light" [disabled]="lockButton"  mdbWavesEffect>Guardar</button>
+									</div>
+							  </div>
+							  <!--/.Buttons Row -->
+							</form>
+						</div>
+					</div>
+				</div>
+
+			</div>
+			<!--/.Card-->
+	    </div>
+
+	</div>
+	<!--/.Card-->
+</div>
+
+<!-- else if -->
+
+<app-footer></app-footer>

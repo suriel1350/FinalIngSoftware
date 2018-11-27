@@ -1,0 +1,175 @@
+<mdb-navbar SideClass="navbar navbar-expand-lg navbar-dark my-color">
+
+    <!-- Navbar brand -->
+    <mdb-navbar-brand><a class="navbar-brand" [routerLink]="['/inicio']">Faurecia</a></mdb-navbar-brand>
+
+    <!-- Collapsible content -->
+    <links>
+
+        <!-- Links -->
+        <ul class="navbar-nav mr-auto">
+            <li routerLinkActive="active" [routerLink]="['/inicio']" class="nav-item">
+                <a i18n="@@navbarLoggedHomeID" class="nav-link waves-light" mdbWavesEffect>Inicio</a>
+            </li>
+            <li routerLinkActive="active" [routerLink]="['/referrals']" class="nav-item">
+                <a i18n="@@navbarLoggedReferralsID" class="nav-link waves-light" mdbWavesEffect>Candidatos</a>
+            </li>
+            <li (click)="show( 'Hola' )" class="nav-item">
+                <a i18n="@@navbarLoggedNuevoID" class="nav-link waves-light" mdbWavesEffect><mdb-icon icon="bell"></mdb-icon><span class="badge faurecia-rosa">Nuevo</span></a>
+            </li>
+            <li (click)="showInfo( 'Hola' )" class="nav-item">
+                <a i18n="@@navbarLoggedInstruccionesID" class="nav-link waves-light" mdbWavesEffect><mdb-icon icon="exclamation-circle"></mdb-icon><span class="badge faurecia-rosa">Instrucciones</span></a>
+            </li>
+            <li (click)="logout()" class="nav-item active">
+                <a  i18n="@@navbarLoggedSalirID" class="nav-link waves-light" mdbWavesEffect>Cerrar Sesión</a>
+            </li>
+        </ul>
+        <!-- Links -->
+
+        <div *ngFor="let locale of languages">
+          <a [href]="'/' + locale.code + '/#' + currentUrl" class="btn faurecia-rosa waves-light btnTabla" mdbWavesEffect>{{ locale.label }}</a>
+        </div>
+    </links>
+    <!-- Collapsible content -->
+
+</mdb-navbar>
+
+<div mdbModal #contentnoti="mdbModal" class="modal fade right" tabindex="-1" role="dialog" aria-labelledby="myBasicModalLabel"
+aria-hidden="true">
+  <div class="modal-dialog modal-full-height modal-right" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close pull-right" aria-label="Close" (click)="contentnoti.hide()">
+          <span aria-hidden="true">×</span>
+        </button>
+        <h4 i18n="@@navbarLoggedModalTituloID" class="modal-title w-100" id="myModalLabel">Mis notificaciones</h4>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-md-12 col-lg-12 col-xl-12 text-center">
+            <div class="list-group" *ngFor="let n of notification">
+              <a class="list-group-item list-group-item-action flex-column align-items-start">
+                <div class="d-flex w-100 justify-content-between">
+                  <h5 class="mb-1"><button i18n="@@navbarLoggedModalDeleteID" (click)="deleteNotification(n.id)" class="btn faurecia-rosa waves-light btnTabla" mdbWavesEffect>Eliminar</button></h5>
+                  <small style="padding-top: 10px;">{{n.createdAt}}</small>
+                </div>
+                <p class="mb-1">{{n.contenido}}</p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button i18n="@@navbarLoggedModalCloseID" class="btn faurecia-rosa waves-light" aria-label="Close" (click)="contentnoti.hide()" mdbWavesEffect>Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div mdbModal #information="mdbModal" class="modal fade right" tabindex="-1" role="dialog" aria-labelledby="myBasicModalLabel"
+aria-hidden="true">
+  <div class="modal-dialog modal-full-height modal-right" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close pull-right" aria-label="Close" (click)="information.hide()">
+          <span aria-hidden="true">×</span>
+        </button>
+        <h4 i18n="@@navbarLoggedModalInstrutituloID" class="modal-title w-100" id="myModalLabel">Instrucciones</h4>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-md-12 col-lg-12 col-xl-12 text-center">
+            <h5 i18n="@@navbarLoggedModalInstruFraseID" class="mb-1 card-title">
+              <!--Recommend and upload the CV of your referral in our site and TalentHub should give you a response in a maximum of
+              72 hours about your trainee.<br>
+              According to your candidate progress in the flow of the selection process you will get points according to the following rules:-->
+              ¡Referir nunca fue tan fácil como ahora!
+            </h5>
+            <br>
+            <ul>
+              <li i18n="@@navbarLoggedModalInstru1ID" class="text-left">Sube el CV y llena los campos</li>
+              <li i18n="@@navbarLoggedModalInstru2ID" class="text-left">Asigna a tu reclutador regional</li>
+              <li i18n="@@navbarLoggedModalInstru3ID" class="text-left">Tendrás una respuesta en máximo 72 horas</li>
+              <li i18n="@@navbarLoggedModalInstru4ID" class="text-left">Si tu candidato tiene el perfil de Faurecia, recibirás tus primeros 100 puntos</li>
+              <li i18n="@@navbarLoggedModalInstru5ID" class="text-left">Puedes seguir el estatus del candidato (etapas de reclutamiento) en la plataforma</li>
+              <li i18n="@@navbarLoggedModalInstru6ID" class="text-left">Desde este momento debes seguir el progreso del candidato</li>
+              <li i18n="@@navbarLoggedModalInstru7ID" class="text-left">Si tu candidato es contratado puedes conseguir hasta 600 puntos</li>
+              <li i18n="@@navbarLoggedModalInstru8ID" class="text-left">Si el candidato permancece por 6 meses puedes conseguir otros 400 puntos</li>
+              <li i18n="@@navbarLoggedModalInstru9ID" class="text-left">Conforme hagas más recomendaciones puedes conseguir diferentes niveles en el sitio (Principiante, Especialista, Profesional, Experto, Máster y Súper Máster)</li>
+            </ul>
+            <br>
+
+            <h5 i18n="@@navbarLoggedModalInstruFraseDos1ID" class="mb-1 card-title">Tienes que conseguir puntos para alcanzar uno de</h5>
+            <h5 i18n="@@navbarLoggedModalInstruFraseDos2ID" class="mb-1 card-title">los siguientes niveles</h5>
+            <br>
+            <ul>
+              <li i18n="@@navbarLoggedModalInstruSta1ID" class="text-left"><span class="badge badge-primary">Menor a 500</span> Principiante</li>
+              <li i18n="@@navbarLoggedModalInstruSta2ID" class="text-left"><span class="badge badge-primary">Entre 500 y 1000</span> Especialista</li>
+              <li i18n="@@navbarLoggedModalInstruSta3ID" class="text-left"><span class="badge badge-primary">Entre 1000 y 1500</span> Profesional</li>
+              <li i18n="@@navbarLoggedModalInstruSta4ID" class="text-left"><span class="badge badge-primary">Entre 1500 y 2000</span> Experto</li>
+              <li i18n="@@navbarLoggedModalInstruSta5ID" class="text-left"><span class="badge badge-primary">Entre 2000 y 2500</span> Máster</li>
+              <li i18n="@@navbarLoggedModalInstruSta6ID" class="text-left"><span class="badge badge-primary">Más de 2500</span> Súper Máster</li>
+            </ul>
+
+            <br>
+            <h5 i18n="@@navbarLoggedModalInstruFraseTresID" class="mb-1 card-title">Puntos por etapas que puedes conseguir con</h5>
+            <h5 i18n="@@navbarLoggedModalInstruFraseTres2ID" class="mb-1 card-title">el candidato</h5>
+            <br>
+            <ul>
+              <li i18n="@@navbarLoggedModalInstruProfID" class="text-left"><span class="badge badge-primary">$100</span> Validación de Perfil</li>
+              <li i18n="@@navbarLoggedModalInstrutALEND" class="text-left"><span class="badge badge-primary">$100</span> Entrevista con Talent Hub</li>
+              <li i18n="@@navbarLoggedModalInstruHirinID" class="text-left"><span class="badge badge-primary">$100</span> Entrevista con Hiring Manager</li>
+              <li i18n="@@navbarLoggedModalInstruN1ID" class="text-left"><span class="badge badge-primary">$100</span> Entrevista con el N+2</li>
+              <li i18n="@@navbarLoggedModalInstruN2ID" class="text-left"><span class="badge badge-primary">$100</span> Oferta de Trabajo</li>
+              <li i18n="@@navbarLoggedModalInstruJobOfferID" class="text-left"><span class="badge badge-primary">$100</span> El candidato acepta la oferta de trabajo</li>
+              <li i18n="@@navbarLoggedModalInstru3MesesID" class="text-left"><span class="badge badge-primary">$200</span> Candidato tiene 3 meses como trainee</li>
+              <li i18n="@@navbarLoggedModalInstru6MesesID" class="text-left"><span class="badge badge-primary">$200</span> Candidato tiene 6 meses como trainee</li>
+            </ul>
+
+            <br>
+
+            <div class="list-group">
+              <a class="list-group-item list-group-item-action flex-column align-items-start">
+                <div class="d-flex w-100 justify-content-between">
+                  <h5 class="mb-1"><button i18n="@@navbarLoggedModalInstruNotasID" class="btn faurecia-rosa waves-light btnTabla" mdbWavesEffect>Notas</button></h5>
+                </div>
+                <ul>
+                  <li i18n="@@navbarLoggedModalInstruNota1ID" class="text-left">Cuando acumules 1000 puntos puedes cambiarlos por una tarjeta Amazon, cada punto vale $1.00 MXN</li>
+                </ul>
+                <ul>
+                  <li i18n="@@navbarLoggedModalInstruNota2ID" class="text-left">Cada vez que el candidato pase a una nueva etapa verás una notificación en tu perfil, haciendo clic en la sección de notificación de la barra de navegación</li>
+                </ul>
+                <ul>
+                  <li i18n="@@navbarLoggedModalInstruNota3ID" class="text-left">Las pautas de los premios serán las mismas que se aplican a esta Política</li>
+                </ul>
+                <ul>
+                  <li i18n="@@navbarLoggedModalInstruNota4ID" class="text-left">Los puntos serán agregados hasta el bono dentro de la póliza</li>
+                </ul>
+                <ul>
+                  <li i18n="@@navbarLoggedModalInstruNota5ID" class="text-left">Este programa de referidos es para M&P y podría incluir trainee pero no generan puntos</li>
+                </ul>
+              </a>
+            </div>
+
+            <br>
+
+            <div class="list-group">
+              <a class="list-group-item list-group-item-action flex-column align-items-start">
+                <p i18n="@@navbarLoggedModalInstruPolicyID" class="mb-1">
+                  Puede consultar la Política de Referidos de México haciendo clic en este botón.
+                </p>
+                <div class="w-100 justify-content-between">
+                  <h5 class="mb-1"><a i18n="@@navbarLoggedModalInstruPolicyLinkID" href="https://s3.amazonaws.com/faureciarecomendatios/recomendados/Mexico+Referral+Policy+Dec.+2015.pdf" target="_blank"  class="btn faurecia-rosa waves-light btnTabla" mdbWavesEffect>Política</a></h5>
+                </div>
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button i18n="@@navbarLoggedModalInstruPoliciuCerrarID" class="btn faurecia-rosa waves-light" aria-label="Close" (click)="information.hide()" mdbWavesEffect>Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>

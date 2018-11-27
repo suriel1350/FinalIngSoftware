@@ -1,0 +1,433 @@
+
+<!--If user has not logged in then-->
+<div *ngIf="!identity">
+	<app-navbar></app-navbar>
+
+	<!--Card-->
+	<div class="card card-cascade wider reverse my-4">
+
+	    <!--Card image-->
+	    <div class="view view-cascade overlay waves-light" mdbWavesEffect>
+	        <img src="assets/img/benefits.png" class="img-fluid">
+	        <a>
+	            <div class="mask rgba-white-slight"></div>
+	        </a>
+	    </div>
+	    <!--/Card image-->
+
+	    <!--Card content-->
+	    <div class="card-body card-body-cascade text-center">
+	        <!--Title-->
+	        <h4 class="card-title"><strong>Please, log in into your account</strong></h4>
+	        <h5 class="indigo-text"><strong>Go to log in section</strong></h5>
+
+	        <p class="card-text">
+	        </p>
+
+	        <!--Linkedin-->
+	        <a class="icons-sm li-ic"><i class="fa fa-linkedin px-2"> </i></a>
+	        <!--Twitter-->
+	        <a class="icons-sm tw-ic"><i class="fa fa-twitter px-2"> </i></a>
+	        <!--Dribbble-->
+	        <a class="icons-sm fb-ic"><i class="fa fa-facebook px-2"> </i></a>
+
+	    </div>
+	    <!--/.Card content-->
+
+	</div>
+	<!--/.Card-->
+</div>
+<!-- else if -->
+
+
+<div *ngIf="identity">
+<!-- If user has logged in the  -->
+	<div *ngIf="identity.role == 'ROLE_USER'">
+		<app-navbarlogged></app-navbarlogged>
+
+		<!--Card-->
+		<div class="card">
+
+		    <!--Card content-->
+		    <div class="card-body">
+				<!--Card-->
+				<div class="card">
+
+					<div class="container">
+						<div class="row">
+							<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+								<!--Card content-->
+							    <div class="card-body text-center">
+							        <!--Title-->
+							        <h1 i18n="@@inicioBienvenidoID" class="animated flipInY card-title">Bienvenido {{userNormal.nombre}} <button [routerLink]="['/edit-profile']" class="btn faurecia-azul waves-light"  mdbWavesEffect>Editar Perfil</button></h1>
+							        <div class="row">
+							        	<div class="col-md-6">
+								        	<!--IMG-->
+									        <div *ngIf="!userNormal.urlimage" class="animated slideInDown">
+									       		<img src="assets/img/UserFace.png" class="img-profile" alt="Card image with a tree in a middle of a lake.">
+									       	</div>
+
+									       	<div *ngIf="userNormal.urlimage" class="animated slideInDown">
+									       		<img src="{{userNormal.urlimage}}" class="img-profile" alt="Card image with a tree in a middle of a lake.">
+									       	</div>
+								        </div>
+
+								        <div class="col-md-6">
+										    	<h3 i18n="@@inicioTusPuntosID" class="animated tada title-profile">Tus Puntos: <span class="badge faurecia-rosa">{{totalUserPoints}}</span></h3>
+										    	<h5 i18n="@@inicioTuEstatusID" class="animated tada text-amazon">Tu Estatus es: {{status}}</h5>
+
+													<div class="row">
+
+														<div class="col-md-6 text-center">
+															<div>
+											       		<img src="assets/img/amazoncard.png" class="animated rotateIn img-amazon" alt="Card image with a tree in a middle of a lake.">
+																<h5 class="animated rotateIn mb-1"><button i18n="@@inicioConseguirTarjetaID" [routerLink]="['/get-card']" class="btn faurecia-rosa waves-light btnTabla" mdbWavesEffect>Conseguir Tarjeta</button></h5>
+											       	</div>
+														</div>
+
+														<div class="col-md-6">
+															<div class="row">
+																<div class="col-md-4">
+																	<div *ngIf="totalUserPoints > 500">
+													       		<img src="assets/img/Picture2.png" class="animated rubberBand img-medal" alt="Card image with a tree in a middle of a lake.">
+													       	</div>
+																</div>
+																<div class="col-md-4">
+																	<div *ngIf="totalUserPoints > 1000">
+													       		<img src="assets/img/Picture1.png" class="animated rubberBand img-medal" alt="Card image with a tree in a middle of a lake.">
+													       	</div>
+																</div>
+																<div class="col-md-4">
+																	<div *ngIf="totalUserPoints > 1500">
+																		<img src="assets/img/Picture5.png" class="animated rubberBand img-medal" alt="Card image with a tree in a middle of a lake.">
+																	</div>
+																</div>
+
+																<div class="col-md-4">
+																	<div *ngIf="totalUserPoints > 2000">
+																		<img src="assets/img/Picture4.png" class="animated rubberBand img-medal" alt="Card image with a tree in a middle of a lake.">
+																	</div>
+																</div>
+
+																<div class="col-md-4">
+																	<div *ngIf="totalUserPoints > 2500">
+																		<img src="assets/img/Picture4.png" class="animated rubberBand img-medal" alt="Card image with a tree in a middle of a lake.">
+																	</div>
+																</div>
+
+															</div>
+														</div>
+
+													</div>
+
+									    	</div>
+								    </div>
+							    </div>
+							</div>
+							<div class="animated swing col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 text-center">
+								  <!--First row-->
+								  <div class="row">
+								      <div class="col-md-4">
+										    <h3 i18n="@@inicioNombreID" class="title-profile">Nombre: <strong class="text-profile">{{userNormal.nombre}}</strong></h3>
+								      </div>
+
+								      <div class="col-md-4">
+										    <h3 i18n="@@inicioPrimerApellidoID" class="title-profile">Primer Apellido: <strong class="text-profile">{{userNormal.firstlastname}}</strong></h3>
+								      </div>
+
+								      <div class="col-md-4">
+										    <h3 i18n="@@inicioSegundoApellidoID" class="title-profile">Segundo Apellido: <strong class="text-profile">{{userNormal.secondlastname}}</strong></h3>
+								      </div>
+								  </div>
+								  <!--/.First row-->
+
+								  <!--Second row-->
+								  <div class="row">
+								      <div class="col-md-6">
+										    <h3 i18n="@@inicioEmailID" class="title-profile">Correo electrónico: <strong class="text-profile">{{userNormal.email}}</strong></h3>
+								      </div>
+
+								      <div class="col-md-6">
+										    <h3 i18n="@@inicioTelefonoID" class="title-profile">Teléfono: <strong class="text-profile">{{userNormal.phone}}</strong></h3>
+								      </div>
+								  </div>
+								  <!--/.Second row-->
+
+								  <!--Third row-->
+								  <div class="row">
+								      <div class="col-md-6">
+										    <h3 i18n="@@inicioPosicionID" class="title-profile">Posición: <strong class="text-profile">{{userNormal.status}}</strong></h3>
+								      </div>
+
+								      <div class="col-md-6">
+										    <h3 i18n="@@inicioAreaID" class="title-profile">Área: <strong class="text-profile">{{userNormal.area1}}</strong></h3>
+								      </div>
+								  </div>
+								  <!--/.Third row-->
+							</div>
+							<br><br><br><br>
+							<div class="col-md-12 text-center">
+								<h5 i18n="@@inicioClickBonusID" class="animated flipInY">Click en la imagen para ver tu bonus!</h5>
+								<img (click)="showBonus()" src="assets/img/bonus.png" class="animated rubberBand img-bonus" alt="Card image with a tree in a middle of a lake.">
+								<br><br>
+							</div>
+						</div>
+					</div>
+
+				</div>
+				<!--/.Card-->
+		    </div>
+
+		</div>
+		<!--/.Card-->
+
+		<!-- Modal de bonus-->
+		<div mdbModal #bonuses="mdbModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myBasicModalLabel"
+		aria-hidden="true">
+			<div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close pull-right" aria-label="Close" (click)="bonuses.hide()">
+							<span aria-hidden="true">×</span>
+						</button>
+						<h4 i18n="@@inicioModalTituloID" class="modal-title w-100" id="myModalLabel">El estatus de tus bonos es:</h4>
+					</div>
+					<div class="modal-body">
+						<div class="row">
+							<div class="col-md-12 col-lg-12 col-xl-12 text-center">
+								<div class="table-responsive">
+									<table class="table">
+										<thead>
+											<tr>
+												<th i18n="@@inicioCandidatoID" scope="col">Candidato</th>
+												<th i18n="@@inicioBonus3ID" scope="col">Bonus 3 Meses</th>
+												<th i18n="@@inicioBonus6ID" scope="col">Bonus 6 Meses</th>
+											</tr>
+										</thead>
+										<tbody *ngFor="let ref of referral; let i =index">
+											<tr>
+												<th scope="row">{{ref.nombre}}</th>
+												<td class="animated zoomInDown">
+													<div class="row">
+														<div class="col-md-6 text-right">
+														  <mdb-icon [ngClass]="proceso[i].bonustresmeses === '5000' ? 'size-icon-modal-status-active' : 'size-icon-modal-status'" icon="check-square-o"></mdb-icon>
+														</div>
+														<!--<div class="col-md-6 text-left">
+														  <h5 class="animated rotateIn mb-1"><button [disabled]="proceso[i].bonustresmeses != '5000'" class="btn faurecia-azul waves-light btnTabla" mdbWavesEffect>Get Card</button></h5>
+														</div>-->
+													</div>
+												</td>
+												<td class="animated zoomInDown">
+													<div class="row">
+														<div class="col-md-6 text-right">
+														  <mdb-icon [ngClass]="proceso[i].bonusseismeses === '10000' ? 'size-icon-modal-status-active' : 'size-icon-modal-status'" icon="check-square-o"></mdb-icon>
+														</div>
+														<!--<div class="col-md-6 text-left">
+														  <h5 class="animated rotateIn mb-1"><button [disabled]="proceso[i].bonusseismeses != '10000'" class="btn faurecia-azul waves-light btnTabla" mdbWavesEffect>Get Card</button></h5>
+														</div>-->
+													</div>
+												</td>
+												<!--
+												<td [ngClass]="procesoModalReferral.etapa1 === true ? 'size-icon-modal-status-active' : 'size-icon-modal-status'" class="animated zoomInDown"><mdb-icon icon="check-square-o"></mdb-icon></td>
+												<td [ngClass]="procesoModalReferral.etapa2 === true ? 'size-icon-modal-status-active' : 'size-icon-modal-status'" class="animated zoomInDown"><mdb-icon icon="check-square-o"></mdb-icon></td>
+												<td [ngClass]="procesoModalReferral.etapa3 === true ? 'size-icon-modal-status-active' : 'size-icon-modal-status'" class="animated zoomInDown"><mdb-icon icon="check-square-o"></mdb-icon></td>
+												<td [ngClass]="procesoModalReferral.etapa4 === true ? 'size-icon-modal-status-active' : 'size-icon-modal-status'" class="animated zoomInDown"><mdb-icon icon="check-square-o"></mdb-icon></td>
+												<td [ngClass]="procesoModalReferral.etapa5 === true ? 'size-icon-modal-status-active' : 'size-icon-modal-status'" class="animated zoomInDown"><mdb-icon icon="check-square-o"></mdb-icon></td>
+												<td [ngClass]="procesoModalReferral.etapa6 === true ? 'size-icon-modal-status-active' : 'size-icon-modal-status'" class="animated zoomInDown"><mdb-icon icon="check-square-o"></mdb-icon></td>
+												<td [ngClass]="procesoModalReferral.etapa7 === true ? 'size-icon-modal-status-active' : 'size-icon-modal-status'" class="animated zoomInDown"><mdb-icon icon="check-square-o"></mdb-icon></td>
+												<td [ngClass]="procesoModalReferral.etapa8 === true ? 'size-icon-modal-status-active' : 'size-icon-modal-status'" class="animated zoomInDown"><mdb-icon icon="check-square-o"></mdb-icon></td>-->
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button class="btn faurecia-rosa waves-light" aria-label="Close" (click)="bonuses.hide()" mdbWavesEffect>Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Ends Modal de bonus-->
+	</div>
+
+	<div *ngIf="identity.role == 'ROLE_ADMIN'">
+		<app-navbaradmin></app-navbaradmin>
+
+		<!--Card-->
+		<div class="card">
+
+		    <!--Card content-->
+		    <div class="card-body">
+				<!--Card-->
+				<div class="card">
+
+
+						<div class="row">
+							<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+							    <!--Card content-->
+							    <div class="card-body text-center">
+							        <!--Title-->
+							        <h4 class="card-title">Score Boarding</h4>
+							        <!--Text-->
+							    </div>
+							</div>
+						</div>
+
+						<div class="row" *ngFor="let user of userScore">
+							<div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3">
+
+							    <!--Card content-->
+							    <div class="card-body text-center">
+							        <!--Title-->
+							        <h4 class="card-title">{{user.nombre}}</h4>
+							        <!--Text-->
+							        <strong class="card-text scoreData">{{user.email}}</strong>
+							        <strong class="card-text scoreData">{{user.phone}}</strong>
+							        <strong class="card-text scoreData">Referrals: {{user.totalrefs}}</strong>
+							        <strong class="card-text scoreData">Points: {{user.totalscore}}</strong>
+							    </div>
+							</div>
+
+							<div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3">
+						    	<!--Card image-->
+							    <div class="view hm-white-slight waves-light" mdbWavesEffect>
+							        <img src="assets/img/Picture1.png" class="img-fluid" alt="Card image with a tree in a middle of a lake.">
+							        <a>
+							            <div class="mask"></div>
+							        </a>
+							    </div>
+
+							    <!--Card content-->
+							    <div class="card-body text-center">
+							        <!--Title-->
+							        <h4 class="card-title">See Referrals</h4>
+							        <!--Text
+							        <p class="card-text">All your candidates and their feedback will be displayed on this view.</p> -->
+							    </div>
+							</div>
+
+							<div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3">
+						    	<!--Card image-->
+							    <div class="view hm-white-slight waves-light" mdbWavesEffect>
+							        <img src="assets/img/Picture2.png" class="img-fluid" alt="Card image with a tree in a middle of a lake.">
+							        <a>
+							            <div class="mask"></div>
+							        </a>
+							    </div>
+
+							    <!--Card content-->
+							    <div class="card-body text-center">
+							        <!--Title-->
+							        <h4 class="card-title">See Referrals</h4>
+							        <!--Text
+							        <p class="card-text">All your candidates and their feedback will be displayed on this view.</p> -->
+							    </div>
+							</div>
+
+							<div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3">
+						    	<!--Card image-->
+							    <div class="view hm-white-slight waves-light" mdbWavesEffect>
+							        <img src="assets/img/Picture3.png" class="img-fluid" alt="Card image with a tree in a middle of a lake.">
+							        <a>
+							            <div class="mask"></div>
+							        </a>
+							    </div>
+
+							    <!--Card content-->
+							    <div class="card-body text-center">
+							        <!--Title-->
+							        <h4 class="card-title">See Referrals</h4>
+							        <!--Text
+							        <p class="card-text">All your candidates and their feedback will be displayed on this view.</p> -->
+							    </div>
+							</div>
+						</div>
+
+				</div>
+				<!--/.Card-->
+		    </div>
+
+		</div>
+		<!--/.Card-->
+	</div>
+
+	<div *ngIf="identity.role == 'ROLE_RECRUITER'">
+		<app-navbarrecru></app-navbarrecru>
+
+		<!--Card-->
+		<div class="card">
+
+			<div class="container">
+				<div class="row">
+					<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+						<!--Card content-->
+							<div class="card-body text-center">
+									<!--Title-->
+									<h1 i18n="@@inicioRecluBienvenidoID" class="card-title">Bienvenido {{userRecruiter.nombre}} <button [routerLink]="['/edit-profile']" class="btn faurecia-azul waves-light"  mdbWavesEffect>Editar Perfil</button></h1>
+									<div class="row">
+										<div class="col-md-12">
+											<!--IMG-->
+											<div *ngIf="!userRecruiter.urlimage">
+												<img src="assets/img/UserFace.png" class="img-recruiter" alt="Card image with a tree in a middle of a lake.">
+											</div>
+
+											<div *ngIf="userRecruiter.urlimage">
+												<img src="{{userRecruiter.urlimage}}" class="img-recruiter" alt="Card image with a tree in a middle of a lake.">
+											</div>
+										</div>
+								</div>
+							</div>
+					</div>
+					<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 text-center">
+							<!--First row-->
+							<div class="row">
+									<div class="col-md-4">
+										<h3 i18n="@@inicioRecluNombreID" class="title-profile">Nombre: <strong class="text-profile">{{userRecruiter.nombre}}</strong></h3>
+									</div>
+
+									<div class="col-md-4">
+										<h3 i18n="@@inicioRecluPrimerApellidoID" class="title-profile">Primer Apellido: <strong class="text-profile">{{userRecruiter.firstlastname}}</strong></h3>
+									</div>
+
+									<div class="col-md-4">
+										<h3 i18n="@@inicioRecluSegundoApellidoID" class="title-profile">Segundo Apellido: <strong class="text-profile">{{userRecruiter.secondlastname}}</strong></h3>
+									</div>
+							</div>
+							<!--/.First row-->
+
+							<!--Second row-->
+							<div class="row">
+									<div class="col-md-6">
+										<h3 i18n="@@inicioRecluEmailID" class="title-profile">Correo electrónico: <strong class="text-profile">{{userRecruiter.email}}</strong></h3>
+									</div>
+
+									<div class="col-md-6">
+										<h3 i18n="@@inicioRecluTelefonoID" class="title-profile">Teléfono: <strong class="text-profile">{{userRecruiter.phone}}</strong></h3>
+									</div>
+							</div>
+							<!--/.Second row-->
+
+							<!--Third row-->
+							<div class="row">
+									<div class="col-md-6">
+										<h3 i18n="@@inicioRecluPosicionID" class="title-profile">Posición: <strong class="text-profile">{{userRecruiter.status}}</strong></h3>
+									</div>
+
+									<div class="col-md-6">
+										<h3 i18n="@@inicioRecluAreaID" class="title-profile">Área: <strong class="text-profile">{{userRecruiter.area1}}</strong></h3>
+									</div>
+							</div>
+							<!--/.Third row-->
+					</div>
+				</div>
+			</div>
+
+		</div>
+		<!--/.Card-->
+	</div>
+</div>
+	<!-- else if -->
+
+<app-footer></app-footer>

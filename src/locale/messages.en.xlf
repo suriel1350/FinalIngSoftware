@@ -1,0 +1,2231 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="iniciarsesionID" datatype="html">
+        <source>Iniciar Sesión</source>
+        <target>Login</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/login.component.ts</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="correoID" datatype="html">
+        <source>Correo electrónico</source>
+        <target>Email</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/login.component.ts</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="contraseniaID" datatype="html">
+        <source>Contraseña</source>
+        <target>Password</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/login.component.ts</context>
+          <context context-type="linenumber">27</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="olvidasteID" datatype="html">
+        <source>¿Olvidaste tu contraseña?</source>
+        <target>Forgot your password?</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/login.component.ts</context>
+          <context context-type="linenumber">29</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="entrarID" datatype="html">
+        <source>Entrar</source>
+        <target>Enter</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/login.component.ts</context>
+          <context context-type="linenumber">34</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="nomiembroID" datatype="html">
+        <source>¿No eres miembro?
+                  <x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/> Registrarse<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>
+                </source>
+                <target>Not a member?
+                          <x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/> Register<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>
+                        </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/login.component.ts</context>
+          <context context-type="linenumber">43</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="eresreclutadorID" datatype="html">
+        <source>¿Eres un reclutador?
+                  <x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/> Entrar como reclutador<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>
+                </source>
+                <target>Are you a recluiter?
+                          <x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/> Login as recluiter<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>
+                        </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/login.component.ts</context>
+          <context context-type="linenumber">49</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="loginasrecruiterID" datatype="html">
+        <source>Iniciar Sesión como Reclutador</source>
+        <target>Login as Recluiter</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/login.component.ts</context>
+          <context context-type="linenumber">62</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="emailRecruiterLoginID" datatype="html">
+        <source>Correo electrónico</source>
+        <target>Email</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/login.component.ts</context>
+          <context context-type="linenumber">70</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="passwordRecruiterLoginID" datatype="html">
+        <source>Contraseña</source>
+        <target>Password</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/login.component.ts</context>
+          <context context-type="linenumber">75</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="forgotPasswordRecruiterLoginID" datatype="html">
+        <source>¿Olvidaste tu contraseña?</source>
+        <target>Forgot your password?</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/login.component.ts</context>
+          <context context-type="linenumber">77</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="enterRecruiterID" datatype="html">
+        <source>Entrar</source>
+        <target>Enter</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/login.component.ts</context>
+          <context context-type="linenumber">82</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="noEresReclutadorID" datatype="html">
+        <source>¿No eres reclutador?
+                  <x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/> Ir a login<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>
+                </source>
+                <target>Not a recluiter?
+                          <x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/> Go to Login<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>
+                        </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/login.component.ts</context>
+          <context context-type="linenumber">91</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="navbarLoginID" datatype="html">
+        <source>Iniciar Sesión</source>
+        <target>Login</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/navbar.component.ts</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="registerTituloID" datatype="html">
+        <source>Registrarse</source>
+        <target>Sign up</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/register.component.ts</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="registerNombreID" datatype="html">
+        <source>Tu nombre</source>
+        <target>Your Name</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/register.component.ts</context>
+          <context context-type="linenumber">21</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="registerEmailID" datatype="html">
+        <source>Tu correo electrónico</source>
+        <target>Your email</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/register.component.ts</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="registerRegisterID" datatype="html">
+        <source>Registrarse</source>
+        <target>Register</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/register.component.ts</context>
+          <context context-type="linenumber">30</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="registerAlreadyMemberID" datatype="html">
+        <source>¿Ya eres un miembro?
+                <x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/> Ir a Iniciar sesión<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>
+              </source>
+        <target>Already a member?
+                <x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/> Go to Login<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>
+              </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/register.component.ts</context>
+          <context context-type="linenumber">38</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="validateTituloID" datatype="html">
+        <source>Registrarse</source>
+        <target>Sign up</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/validate-register.component.ts</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="validateEmailID" datatype="html">
+        <source>Correo Electrónico</source>
+        <target>Your Email</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/validate-register.component.ts</context>
+          <context context-type="linenumber">21</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="validatePasswordID" datatype="html">
+        <source>Contraseña</source>
+        <target>Your Password</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/validate-register.component.ts</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="validateRegisterID" datatype="html">
+        <source>Registrar</source>
+        <target>Register</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/validate-register.component.ts</context>
+          <context context-type="linenumber">30</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="validateGoLoginID" datatype="html">
+        <source> Ir a Iniciar Sesión</source>
+        <target> Go to Login</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/validate-register.component.ts</context>
+          <context context-type="linenumber">39</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="inicioBienvenidoID" datatype="html">
+        <source>Bienvenido <x id="INTERPOLATION" equiv-text="{{userNormal.nombre}}"/> <x id="START_TAG_BUTTON" ctype="x-button" equiv-text="&lt;button&gt;"/>Editar Perfil<x id="CLOSE_TAG_BUTTON" ctype="x-button" equiv-text="&lt;/button&gt;"/></source>
+        <target>Welcome <x id="INTERPOLATION" equiv-text="{{userNormal.nombre}}"/> <x id="START_TAG_BUTTON" ctype="x-button" equiv-text="&lt;button&gt;"/>Edit Profile<x id="CLOSE_TAG_BUTTON" ctype="x-button" equiv-text="&lt;/button&gt;"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/inicio.component.ts</context>
+          <context context-type="linenumber">62</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="inicioTusPuntosID" datatype="html">
+        <source>Tus Puntos: <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/><x id="INTERPOLATION" equiv-text="{{totalUserPoints}}"/><x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></source>
+        <target>Your Points: <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/><x id="INTERPOLATION" equiv-text="{{totalUserPoints}}"/><x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/inicio.component.ts</context>
+          <context context-type="linenumber">76</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="inicioTuEstatusID" datatype="html">
+        <source>Tu Estatus es: <x id="INTERPOLATION" equiv-text="{{status}}"/></source>
+        <target>Your Status is: <x id="INTERPOLATION" equiv-text="{{status}}"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/inicio.component.ts</context>
+          <context context-type="linenumber">77</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="inicioConseguirTarjetaID" datatype="html">
+        <source>Conseguir Tarjeta</source>
+        <target>Get Card</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/inicio.component.ts</context>
+          <context context-type="linenumber">84</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="inicioNombreID" datatype="html">
+        <source>Nombre: <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/><x id="INTERPOLATION" equiv-text="{{userNormal.nombre}}"/><x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/></source>
+        <target>Name: <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/><x id="INTERPOLATION" equiv-text="{{userNormal.nombre}}"/><x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/inicio.component.ts</context>
+          <context context-type="linenumber">131</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="inicioPrimerApellidoID" datatype="html">
+        <source>Primer Apellido: <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/><x id="INTERPOLATION" equiv-text="{{userNormal.firstlastname}}"/><x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/></source>
+        <target>First Last Name: <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/><x id="INTERPOLATION" equiv-text="{{userNormal.firstlastname}}"/><x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/inicio.component.ts</context>
+          <context context-type="linenumber">135</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="inicioSegundoApellidoID" datatype="html">
+        <source>Segundo Apellido: <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/><x id="INTERPOLATION" equiv-text="{{userNormal.secondlastname}}"/><x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/></source>
+        <target>Second Last Name: <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/><x id="INTERPOLATION" equiv-text="{{userNormal.secondlastname}}"/><x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/inicio.component.ts</context>
+          <context context-type="linenumber">139</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="inicioEmailID" datatype="html">
+        <source>Correo electrónico: <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/><x id="INTERPOLATION" equiv-text="{{userNormal.email}}"/><x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/></source>
+        <target>Email: <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/><x id="INTERPOLATION" equiv-text="{{userNormal.email}}"/><x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/inicio.component.ts</context>
+          <context context-type="linenumber">147</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="inicioTelefonoID" datatype="html">
+        <source>Teléfono: <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/><x id="INTERPOLATION" equiv-text="{{userNormal.phone}}"/><x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/></source>
+        <target>Phone: <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/><x id="INTERPOLATION" equiv-text="{{userNormal.phone}}"/><x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/inicio.component.ts</context>
+          <context context-type="linenumber">151</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="inicioPosicionID" datatype="html">
+        <source>Posición: <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/><x id="INTERPOLATION" equiv-text="{{userNormal.status}}"/><x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/></source>
+        <target>Position: <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/><x id="INTERPOLATION" equiv-text="{{userNormal.status}}"/><x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/inicio.component.ts</context>
+          <context context-type="linenumber">159</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="inicioAreaID" datatype="html">
+        <source>Área: <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/><x id="INTERPOLATION" equiv-text="{{userNormal.area1}}"/><x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/></source>
+        <target>Area: <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/><x id="INTERPOLATION" equiv-text="{{userNormal.area1}}"/><x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/inicio.component.ts</context>
+          <context context-type="linenumber">163</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="inicioClickBonusID" datatype="html">
+        <source>Click en la imagen para ver tu bonus!</source>
+        <target>Click on the image to see your bonus!</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/inicio.component.ts</context>
+          <context context-type="linenumber">170</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="inicioModalTituloID" datatype="html">
+        <source>El estatus de tus bonos es:</source>
+        <target>The status of your bonuses is:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/inicio.component.ts</context>
+          <context context-type="linenumber">193</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="inicioCandidatoID" datatype="html">
+        <source>Candidato</source>
+        <target>Candidate</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/inicio.component.ts</context>
+          <context context-type="linenumber">202</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="inicioBonus3ID" datatype="html">
+        <source>Bonus 3 Meses</source>
+        <target>Bonus 3 Months</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/inicio.component.ts</context>
+          <context context-type="linenumber">203</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="inicioBonus6ID" datatype="html">
+        <source>Bonus 6 Meses</source>
+        <target>Bonus 6 Months</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/inicio.component.ts</context>
+          <context context-type="linenumber">204</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="inicioRecluBienvenidoID" datatype="html">
+        <source>Bienvenido <x id="INTERPOLATION" equiv-text="{{userRecruiter.nombre}}"/> <x id="START_TAG_BUTTON" ctype="x-button" equiv-text="&lt;button&gt;"/>Editar Perfil<x id="CLOSE_TAG_BUTTON" ctype="x-button" equiv-text="&lt;/button&gt;"/></source>
+        <target>Welcome <x id="INTERPOLATION" equiv-text="{{userRecruiter.nombre}}"/> <x id="START_TAG_BUTTON" ctype="x-button" equiv-text="&lt;button&gt;"/>Editar Perfil<x id="CLOSE_TAG_BUTTON" ctype="x-button" equiv-text="&lt;/button&gt;"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/inicio.component.ts</context>
+          <context context-type="linenumber">368</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="inicioRecluNombreID" datatype="html">
+        <source>Nombre: <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/><x id="INTERPOLATION" equiv-text="{{userRecruiter.nombre}}"/><x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/></source>
+        <target>Name: <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/><x id="INTERPOLATION" equiv-text="{{userRecruiter.nombre}}"/><x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/inicio.component.ts</context>
+          <context context-type="linenumber">387</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="inicioRecluPrimerApellidoID" datatype="html">
+        <source>Primer Apellido: <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/><x id="INTERPOLATION" equiv-text="{{userRecruiter.firstlastname}}"/><x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/></source>
+        <target>First Last Name: <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/><x id="INTERPOLATION" equiv-text="{{userRecruiter.firstlastname}}"/><x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/inicio.component.ts</context>
+          <context context-type="linenumber">391</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="inicioRecluSegundoApellidoID" datatype="html">
+        <source>Segundo Apellido: <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/><x id="INTERPOLATION" equiv-text="{{userRecruiter.secondlastname}}"/><x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/></source>
+        <target>Second Last Name: <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/><x id="INTERPOLATION" equiv-text="{{userRecruiter.secondlastname}}"/><x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/inicio.component.ts</context>
+          <context context-type="linenumber">395</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="inicioRecluEmailID" datatype="html">
+        <source>Correo electrónico: <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/><x id="INTERPOLATION" equiv-text="{{userRecruiter.email}}"/><x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/></source>
+        <target>Email: <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/><x id="INTERPOLATION" equiv-text="{{userRecruiter.email}}"/><x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/inicio.component.ts</context>
+          <context context-type="linenumber">403</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="inicioRecluTelefonoID" datatype="html">
+        <source>Teléfono: <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/><x id="INTERPOLATION" equiv-text="{{userRecruiter.phone}}"/><x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/></source>
+        <target>Phone: <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/><x id="INTERPOLATION" equiv-text="{{userRecruiter.phone}}"/><x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/inicio.component.ts</context>
+          <context context-type="linenumber">407</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="inicioRecluPosicionID" datatype="html">
+        <source>Posición: <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/><x id="INTERPOLATION" equiv-text="{{userRecruiter.status}}"/><x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/></source>
+        <target>Position: <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/><x id="INTERPOLATION" equiv-text="{{userRecruiter.status}}"/><x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/inicio.component.ts</context>
+          <context context-type="linenumber">415</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="inicioRecluAreaID" datatype="html">
+        <source>Área: <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/><x id="INTERPOLATION" equiv-text="{{userRecruiter.area1}}"/><x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/></source>
+        <target>Area: <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/><x id="INTERPOLATION" equiv-text="{{userRecruiter.area1}}"/><x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/inicio.component.ts</context>
+          <context context-type="linenumber">419</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="navbarLoggedHomeID" datatype="html">
+        <source>Inicio</source>
+        <target>Home</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/navbar-logged.component.ts</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="navbarLoggedReferralsID" datatype="html">
+        <source>Candidatos</source>
+        <target>Referrals</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/navbar-logged.component.ts</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="navbarLoggedNuevoID" datatype="html">
+        <source><x id="START_TAG_MDB-ICON" ctype="x-mdb-icon" equiv-text="&lt;mdb-icon&gt;"/><x id="CLOSE_TAG_MDB-ICON" ctype="x-mdb-icon" equiv-text="&lt;/mdb-icon&gt;"/><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>Nuevo<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></source>
+        <target><x id="START_TAG_MDB-ICON" ctype="x-mdb-icon" equiv-text="&lt;mdb-icon&gt;"/><x id="CLOSE_TAG_MDB-ICON" ctype="x-mdb-icon" equiv-text="&lt;/mdb-icon&gt;"/><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>New<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/navbar-logged.component.ts</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="navbarLoggedInstruccionesID" datatype="html">
+        <source><x id="START_TAG_MDB-ICON" ctype="x-mdb-icon" equiv-text="&lt;mdb-icon&gt;"/><x id="CLOSE_TAG_MDB-ICON" ctype="x-mdb-icon" equiv-text="&lt;/mdb-icon&gt;"/><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>Instrucciones<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></source>
+        <target><x id="START_TAG_MDB-ICON" ctype="x-mdb-icon" equiv-text="&lt;mdb-icon&gt;"/><x id="CLOSE_TAG_MDB-ICON" ctype="x-mdb-icon" equiv-text="&lt;/mdb-icon&gt;"/><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>Instructions<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/navbar-logged.component.ts</context>
+          <context context-type="linenumber">21</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="navbarLoggedSalirID" datatype="html">
+        <source>Cerrar Sesión</source>
+        <target>Logout</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/navbar-logged.component.ts</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="navbarLoggedModalTituloID" datatype="html">
+        <source>Mis notificaciones</source>
+        <target>My Notifications</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/navbar-logged.component.ts</context>
+          <context context-type="linenumber">45</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="navbarLoggedModalDeleteID" datatype="html">
+        <source>Eliminar</source>
+        <target>Delete</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/navbar-logged.component.ts</context>
+          <context context-type="linenumber">53</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="navbarLoggedModalCloseID" datatype="html">
+        <source>Cerrar</source>
+        <target>Close</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/navbar-logged.component.ts</context>
+          <context context-type="linenumber">63</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="navbarLoggedModalInstrutituloID" datatype="html">
+        <source>Instrucciones</source>
+        <target>Instructions</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/navbar-logged.component.ts</context>
+          <context context-type="linenumber">77</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="navbarLoggedModalInstruFraseID" datatype="html">
+        <source>
+
+              ¡Referir nunca fue tan fácil como ahora!
+            </source>
+        <target>
+
+              Refering was never as easy as now!
+            </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/navbar-logged.component.ts</context>
+          <context context-type="linenumber">82</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="navbarLoggedModalInstru1ID" datatype="html">
+        <source>Sube el CV y llena los campos</source>
+        <target>Upload the CV and fill the fields</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/navbar-logged.component.ts</context>
+          <context context-type="linenumber">90</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="navbarLoggedModalInstru2ID" datatype="html">
+        <source>Asigna a tu reclutador regional</source>
+        <target>Assign to your regional recruiter</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/navbar-logged.component.ts</context>
+          <context context-type="linenumber">91</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="navbarLoggedModalInstru3ID" datatype="html">
+        <source>Tendrás una respuesta en máximo 72 horas</source>
+        <target>You will have a response in maximum 72 hours</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/navbar-logged.component.ts</context>
+          <context context-type="linenumber">92</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="navbarLoggedModalInstru4ID" datatype="html">
+        <source>Si tu candidato tiene el perfil de Faurecia, recibirás tus primeros 100 puntos</source>
+        <target>If your candidate has the Faurecia profile you will receive your first 100 points</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/navbar-logged.component.ts</context>
+          <context context-type="linenumber">93</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="navbarLoggedModalInstru5ID" datatype="html">
+        <source>Puedes seguir el estatus del candidato (etapas de reclutamiento) en la plataforma</source>
+        <target>You could follow the candidate&apos;s status (recruitment stages) in the platform</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/navbar-logged.component.ts</context>
+          <context context-type="linenumber">94</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="navbarLoggedModalInstru6ID" datatype="html">
+        <source>Desde este momento debes seguir el progreso del candidato</source>
+        <target>From this moment you should follow the progress</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/navbar-logged.component.ts</context>
+          <context context-type="linenumber">95</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="navbarLoggedModalInstru7ID" datatype="html">
+        <source>Si tu candidato es contratado puedes conseguir hasta 600 puntos</source>
+        <target>If your candidate is hired you can get until 600 points</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/navbar-logged.component.ts</context>
+          <context context-type="linenumber">96</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="navbarLoggedModalInstru8ID" datatype="html">
+        <source>Si el candidato permancece por 6 meses puedes conseguir otros 400 puntos</source>
+        <target>If he stays for 6 months you can get other 400 points</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/navbar-logged.component.ts</context>
+          <context context-type="linenumber">97</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="navbarLoggedModalInstru9ID" datatype="html">
+        <source>Conforme hagas más recomendaciones puedes conseguir diferentes niveles en el sitio (Principiante, Especialista, Profesional, Experto, Máster y Súper Máster)</source>
+        <target>As you make more recommendations you can get different levels in the site (Beginner, Specialist, Professional, Expert, Master, Super Master)</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/navbar-logged.component.ts</context>
+          <context context-type="linenumber">98</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="navbarLoggedModalInstruFraseDos1ID" datatype="html">
+        <source>Tienes que conseguir puntos para alcanzar uno de</source>
+        <target>You have to get points to reach one of</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/navbar-logged.component.ts</context>
+          <context context-type="linenumber">102</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="navbarLoggedModalInstruFraseDos2ID" datatype="html">
+        <source>los siguientes niveles</source>
+        <target>these different levels</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/navbar-logged.component.ts</context>
+          <context context-type="linenumber">103</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="navbarLoggedModalInstruSta1ID" datatype="html">
+        <source><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>Menor a 500<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/> Principiante</source>
+        <target><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>Less than 500<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/> Beginner</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/navbar-logged.component.ts</context>
+          <context context-type="linenumber">106</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="navbarLoggedModalInstruSta2ID" datatype="html">
+        <source><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>Entre 500 y 1000<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/> Especialista</source>
+        <target><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>Between 500 and 1000<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/> Specialist</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/navbar-logged.component.ts</context>
+          <context context-type="linenumber">107</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="navbarLoggedModalInstruSta3ID" datatype="html">
+        <source><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>Entre 1000 y 1500<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/> Profesional</source>
+        <target><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>Between 1000 and 1500<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/> Professional</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/navbar-logged.component.ts</context>
+          <context context-type="linenumber">108</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="navbarLoggedModalInstruSta4ID" datatype="html">
+        <source><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>Entre 1500 y 2000<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/> Experto</source>
+        <target><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>Between 1500 and 2000<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/> Expert</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/navbar-logged.component.ts</context>
+          <context context-type="linenumber">109</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="navbarLoggedModalInstruSta5ID" datatype="html">
+        <source><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>Entre 2000 y 2500<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/> Máster</source>
+        <target><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>Between 2000 and 2500<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/> Master</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/navbar-logged.component.ts</context>
+          <context context-type="linenumber">110</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="navbarLoggedModalInstruSta6ID" datatype="html">
+        <source><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>Más de 2500<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/> Súper Máster</source>
+        <target><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>More than 2500<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/> Super Master</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/navbar-logged.component.ts</context>
+          <context context-type="linenumber">111</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="navbarLoggedModalInstruFraseTresID" datatype="html">
+        <source>Puntos por etapas que puedes conseguir con</source>
+        <target>These are the different points for your</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/navbar-logged.component.ts</context>
+          <context context-type="linenumber">115</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="navbarLoggedModalInstruFraseTres2ID" datatype="html">
+        <source>el candidato</source>
+        <target>candidate</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/navbar-logged.component.ts</context>
+          <context context-type="linenumber">116</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="navbarLoggedModalInstruProfID" datatype="html">
+        <source><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>$100<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/> Validación de Perfil</source>
+        <target><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>$100<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/> Profile Validation</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/navbar-logged.component.ts</context>
+          <context context-type="linenumber">119</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="navbarLoggedModalInstrutALEND" datatype="html">
+        <source><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>$100<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/> Entrevista con Talent Hub</source>
+        <target><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>$100<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/> Interview with Talent Hub</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/navbar-logged.component.ts</context>
+          <context context-type="linenumber">120</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="navbarLoggedModalInstruHirinID" datatype="html">
+        <source><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>$100<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/> Entrevista con Hiring Manager</source>
+        <target><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>$100<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/> Interview with Hiring Manager</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/navbar-logged.component.ts</context>
+          <context context-type="linenumber">121</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="navbarLoggedModalInstruN1ID" datatype="html">
+        <source><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>$100<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/> Entrevista con el N+2</source>
+        <target><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>$100<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/> Interview with the N+2</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/navbar-logged.component.ts</context>
+          <context context-type="linenumber">122</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="navbarLoggedModalInstruN2ID" datatype="html">
+        <source><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>$100<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/> Oferta de Trabajo</source>
+        <target><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>$100<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/> Job Offer</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/navbar-logged.component.ts</context>
+          <context context-type="linenumber">123</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="navbarLoggedModalInstruJobOfferID" datatype="html">
+        <source><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>$100<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/> El candidato acepta la oferta de trabajo</source>
+        <target><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>$100<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/> Your candidate accepts the job offer</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/navbar-logged.component.ts</context>
+          <context context-type="linenumber">124</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="navbarLoggedModalInstru3MesesID" datatype="html">
+        <source><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>$200<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/> Candidato tiene 3 meses como trainee</source>
+        <target><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>$200<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/> Candidate has 3 months as trainee</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/navbar-logged.component.ts</context>
+          <context context-type="linenumber">125</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="navbarLoggedModalInstru6MesesID" datatype="html">
+        <source><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>$200<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/> Candidato tiene 6 meses como trainee</source>
+        <target><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>$200<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/> Candidate has 6 months as trainee</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/navbar-logged.component.ts</context>
+          <context context-type="linenumber">126</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="navbarLoggedModalInstruNotasID" datatype="html">
+        <source>Notas</source>
+        <target>Notes</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/navbar-logged.component.ts</context>
+          <context context-type="linenumber">134</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="navbarLoggedModalInstruNota1ID" datatype="html">
+        <source>Cuando acumules 1000 puntos puedes cambiarlos por una tarjeta Amazon, cada punto vale $1.00 MXN</source>
+        <target>When you accumulate 1000 points you can change them for an Amazon Card where every point worth $1 MXN</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/navbar-logged.component.ts</context>
+          <context context-type="linenumber">137</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="navbarLoggedModalInstruNota2ID" datatype="html">
+        <source>Cada vez que el candidato pase a una nueva etapa verás una notificación en tu perfil, haciendo clic en la sección de notificación de la barra de navegación</source>
+        <target>Every time your candidate pass a new stage you will see a notification on your profile by going to the notifications section in the navigation bar</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/navbar-logged.component.ts</context>
+          <context context-type="linenumber">140</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="navbarLoggedModalInstruNota3ID" datatype="html">
+        <source>Las pautas de los premios serán las mismas que se aplican a esta Política</source>
+        <target>The awards guidelines will be the same that applying for this Policy</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/navbar-logged.component.ts</context>
+          <context context-type="linenumber">143</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="navbarLoggedModalInstruNota4ID" datatype="html">
+        <source>Los puntos serán agregados hasta el bono dentro de la póliza</source>
+        <target>The points will be added until the bonus within the policy</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/navbar-logged.component.ts</context>
+          <context context-type="linenumber">146</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="navbarLoggedModalInstruNota5ID" datatype="html">
+        <source>Este programa de referidos es para M&amp;P y podría incluir trainee pero no generan puntos</source>
+        <target>This referral program is for M&amp;P and it could include trainees but they do not generate points</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/navbar-logged.component.ts</context>
+          <context context-type="linenumber">149</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="navbarLoggedModalInstruPolicyID" datatype="html">
+        <source>
+                  Puede consultar la Política de Referidos de México haciendo clic en este botón.
+                </source>
+        <target>
+                  You can consult the Mexico Referral Policy by clicking on this button
+                </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/navbar-logged.component.ts</context>
+          <context context-type="linenumber">158</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="navbarLoggedModalInstruPolicyLinkID" datatype="html">
+        <source>Política</source>
+        <target>Policy</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/navbar-logged.component.ts</context>
+          <context context-type="linenumber">162</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="navbarLoggedModalInstruPoliciuCerrarID" datatype="html">
+        <source>Cerrar</source>
+        <target>Close</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/navbar-logged.component.ts</context>
+          <context context-type="linenumber">171</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="referralsCard1TituloD" datatype="html">
+        <source>Revisar Estatus de Referidos</source>
+        <target>Review Referrals Status</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/referrals.component.ts</context>
+          <context context-type="linenumber">73</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="referralsCard1ContenidoID" datatype="html">
+        <source>Todos tus candidatos y su retroalimentación serán mostrados en esta vista.</source>
+        <target>All your candidates and their feedback will be displayed on this view.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/referrals.component.ts</context>
+          <context context-type="linenumber">75</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="referralsCard1BotonID" datatype="html">
+        <source>Ver</source>
+        <target>See</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/referrals.component.ts</context>
+          <context context-type="linenumber">76</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="referralsCard2TituloID" datatype="html">
+        <source>Nueva Referencia</source>
+        <target>New Referral</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/referrals.component.ts</context>
+          <context context-type="linenumber">91</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="referralsCard2ContenidoID" datatype="html">
+        <source>Si el desempeño de tu candidato es bueno, es tiempo de recomendarlo.</source>
+        <target>If your candidate is giving the best, then it&apos;s time to create a new referral.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/referrals.component.ts</context>
+          <context context-type="linenumber">93</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="referralsCard2BotonID" datatype="html">
+        <source>Crear</source>
+        <target>Create</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/referrals.component.ts</context>
+          <context context-type="linenumber">94</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="referralNewTituloID" datatype="html">
+        <source>Nueva Referencia <x id="START_TAG_BUTTON" ctype="x-button" equiv-text="&lt;button&gt;"/>Volver al menú<x id="CLOSE_TAG_BUTTON" ctype="x-button" equiv-text="&lt;/button&gt;"/></source>
+        <target>New Referral <x id="START_TAG_BUTTON" ctype="x-button" equiv-text="&lt;button&gt;"/>Back to menu<x id="CLOSE_TAG_BUTTON" ctype="x-button" equiv-text="&lt;/button&gt;"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/referral-new.component.ts</context>
+          <context context-type="linenumber">67</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="referralNewDescripcionID" datatype="html">
+        <source>Si el desempeño de tu candidato es bueno, es tiempo de recomendarlo.</source>
+        <target>If your candidate is giving the best, then it's time to create a new referral.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/referral-new.component.ts</context>
+          <context context-type="linenumber">69</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="referralNewNombreID" datatype="html">
+        <source>Nombre</source>
+        <target>Name</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/referral-new.component.ts</context>
+          <context context-type="linenumber">79</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="referralNewApellidoID" datatype="html">
+        <source>Apellido</source>
+        <target>Last name</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/referral-new.component.ts</context>
+          <context context-type="linenumber">86</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="referralNewEmailID" datatype="html">
+        <source>Correo electrónico</source>
+        <target>E-mail</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/referral-new.component.ts</context>
+          <context context-type="linenumber">93</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="referralNewTelefonoID" datatype="html">
+        <source>Teléfono</source>
+        <target>Cellphone</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/referral-new.component.ts</context>
+          <context context-type="linenumber">111</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="referralNewRedSocialID" datatype="html">
+        <source>Red Social</source>
+        <target>Social network</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/referral-new.component.ts</context>
+          <context context-type="linenumber">118</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="referralNewExperienciaID" datatype="html">
+        <source>Experiencia</source>
+        <target>Experience</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/referral-new.component.ts</context>
+          <context context-type="linenumber">143</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="referralNewAreaID" datatype="html">
+        <source>Área</source>
+        <target>Area</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/referral-new.component.ts</context>
+          <context context-type="linenumber">150</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="referralNewUbicacionRecluID" datatype="html">
+        <source>Ubicación del reclutador</source>
+        <target>Recruiter location</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/referral-new.component.ts</context>
+          <context context-type="linenumber">159</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="referralNewReclutadorID" datatype="html">
+        <source>Reclutador</source>
+        <target>Recruiter</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/referral-new.component.ts</context>
+          <context context-type="linenumber">171</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="referralNewAreaUnoID" datatype="html">
+        <source>Área</source>
+        <target>Area</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/referral-new.component.ts</context>
+          <context context-type="linenumber">189</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="referralNewPosicionUnoID" datatype="html">
+        <source>Posición</source>
+        <target>Position</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/referral-new.component.ts</context>
+          <context context-type="linenumber">201</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="referralNewPosicionID" datatype="html">
+        <source>Escribe la posición</source>
+        <target>Type the position</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/referral-new.component.ts</context>
+          <context context-type="linenumber">215</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="referralNewAreaDosID" datatype="html">
+        <source>Segunda área</source>
+        <target>Second Area</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/referral-new.component.ts</context>
+          <context context-type="linenumber">225</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="referralNewPosicionDosID" datatype="html">
+        <source>Segunda posición</source>
+        <target>Second position</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/referral-new.component.ts</context>
+          <context context-type="linenumber">237</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="referralNewSegundaPosicionID" datatype="html">
+        <source>Escribe la segunda posición</source>
+        <target>Type the second position</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/referral-new.component.ts</context>
+          <context context-type="linenumber">251</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="referralNewPreguntaID" datatype="html">
+        <source>¿Tu candidato es para una posición de trainee?</source>
+        <target>Is your candidate for a trainee position?</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/referral-new.component.ts</context>
+          <context context-type="linenumber">261</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="referralNewPreguntaSiID" datatype="html">
+        <source>Si</source>
+        <target>Yes</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/referral-new.component.ts</context>
+          <context context-type="linenumber">264</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="referralNewPreguntaNoID" datatype="html">
+        <source>No</source>
+        <target>No</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/referral-new.component.ts</context>
+          <context context-type="linenumber">265</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="referralNewStatusID" datatype="html">
+        <source>Estatus: <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/><x id="INTERPOLATION" equiv-text="{{candidateStatus}}"/><x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></source>
+        <target>Candidate Status: <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/><x id="INTERPOLATION" equiv-text="{{candidateStatus}}"/><x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/referral-new.component.ts</context>
+          <context context-type="linenumber">273</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="referralNewCarreraID" datatype="html">
+        <source>Carrera</source>
+        <target>Career</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/referral-new.component.ts</context>
+          <context context-type="linenumber">284</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="referralNewUniversidadID" datatype="html">
+        <source>Universidad</source>
+        <target>University</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/referral-new.component.ts</context>
+          <context context-type="linenumber">291</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="referralNewGeneroID" datatype="html">
+        <source>Género</source>
+        <target>Gender</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/referral-new.component.ts</context>
+          <context context-type="linenumber">300</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="referralNewNivelDeInglesID" datatype="html">
+        <source>Nivel de Inglés</source>
+        <target>English level</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/referral-new.component.ts</context>
+          <context context-type="linenumber">319</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="referralNewEstadoID" datatype="html">
+        <source>Estado de Residencia</source>
+        <target>Residence state</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/referral-new.component.ts</context>
+          <context context-type="linenumber">333</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="referralNewBotonCrearID" datatype="html">
+        <source>Crear Referido</source>
+        <target>Create Referral</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/referral-new.component.ts</context>
+          <context context-type="linenumber">343</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="referralNewModalTituloID" datatype="html">
+        <source>Aviso de Privacidad</source>
+        <target>Privacy advisement</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/referral-new.component.ts</context>
+          <context context-type="linenumber">367</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="referralNewModalContenidoID" datatype="html">
+        <source>SERVICIOS CORPORATIVOS DE PERSONAL ESPECIALIZADO S.A. DE C.V.; EXHAUST SERVICES MEXICANA S.A. DE C.V.; ET HOLDINGS II S. DE R.L. DE C.V. Y FAURECIA SISTEMAS AUTOMOTRICES DE MÉXICO, S.A. DE C.V. (en lo sucesivo “Faurecia”) con domicilio en 4to Retorno Osa Menor #2 Int. 41, Colonia Reserva Territorial Atlixcayotl, San Andrés Cholula, Puebla, México. CP 72810, es responsable de su información personal. Para conocer el tratamiento, así como los procedimientos y requisitos para ejercer sus derechos ARCO, revocar su consentimiento o limitar el uso de su información personal, revise nuestro aviso de privacidad integral en www.mifaurecia.com.mx</source>
+        <target>SERVICIOS CORPORATIVOS DE PERSONAL ESPECIALIZADO S.A. DE C.V.; EXHAUST SERVICES MEXICANA S.A. DE C.V.; ET HOLDINGS II S. DE R.L. DE C.V. Y FAURECIA SISTEMAS AUTOMOTRICES DE MÉXICO, S.A. DE C.V. (in the successive “Faurecia”) with address in 4to Retorno Osa Menor #2 Int. 41, Colonia Reserva Territorial Atlixcayotl, San Andrés Cholula, Puebla, México. CP 72810, is responsible of the personal information. To know the treatment, as well as the processes and requirements to eject  your rights ARCO, revoke your consent or limit the use of your personal information, review our policy advisement on www.mifaurecia.com.mx</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/referral-new.component.ts</context>
+          <context context-type="linenumber">372</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="referralNewModalAcuerdoID" datatype="html">
+        <source>Estoy de Acuerdo</source>
+        <target>Agree</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/referral-new.component.ts</context>
+          <context context-type="linenumber">377</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="referralNewModalDesacuerdoID" datatype="html">
+        <source>No estoy de Acuerdo</source>
+        <target>Disagree</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/referral-new.component.ts</context>
+          <context context-type="linenumber">378</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="referralsseeID" datatype="html">
+        <source>Mis Candidatos
+										<x id="START_TAG_BUTTON" ctype="x-button" equiv-text="&lt;button&gt;"/>Volver al menú<x id="CLOSE_TAG_BUTTON" ctype="x-button" equiv-text="&lt;/button&gt;"/>
+										<x id="START_TAG_BUTTON_1" ctype="x-button" equiv-text="&lt;button&gt;"/>Volver al menú<x id="CLOSE_TAG_BUTTON" ctype="x-button" equiv-text="&lt;/button&gt;"/>
+									</source>
+        <target>My Referrals
+										<x id="START_TAG_BUTTON" ctype="x-button" equiv-text="&lt;button&gt;"/>Back to menu<x id="CLOSE_TAG_BUTTON" ctype="x-button" equiv-text="&lt;/button&gt;"/>
+										<x id="START_TAG_BUTTON_1" ctype="x-button" equiv-text="&lt;button&gt;"/>Back to menu<x id="CLOSE_TAG_BUTTON" ctype="x-button" equiv-text="&lt;/button&gt;"/>
+									</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/referrals-show.component.ts</context>
+          <context context-type="linenumber">68</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="referralsseeYourCandidateID" datatype="html">
+        <source>Tu candidato debe lograr todas las siguientes etapas:</source>
+        <target>Your candidate should achieve all these stages:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/referrals-show.component.ts</context>
+          <context context-type="linenumber">74</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="referralsseeNombreID" datatype="html">
+        <source>Nombre</source>
+        <target>Name</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/referrals-show.component.ts</context>
+          <context context-type="linenumber">81</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="referralsseeProfileID" datatype="html">
+        <source>Validación de Perfil</source>
+        <target>Profile validation</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/referrals-show.component.ts</context>
+          <context context-type="linenumber">82</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="referralsseeInterviewTalentID" datatype="html">
+        <source>Entrevista Talent Hub</source>
+        <target>Interview Talent Hub</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/referrals-show.component.ts</context>
+          <context context-type="linenumber">83</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="referralsseeInterviewHiringID" datatype="html">
+        <source>Entrevista Hiring Manager</source>
+        <target>Interview Hiring Manager</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/referrals-show.component.ts</context>
+          <context context-type="linenumber">84</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="referralsseeInterviewN1ID" datatype="html">
+        <source>Entrevista N+2 / Functional</source>
+        <target>Interview N+2 / Functional</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/referrals-show.component.ts</context>
+          <context context-type="linenumber">85</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="referralsseeJobOfferID" datatype="html">
+        <source>Oferta de Trabajo</source>
+        <target>Job Offer</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/referrals-show.component.ts</context>
+          <context context-type="linenumber">86</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="referralsseeJobOfferAceptanceID" datatype="html">
+        <source>Aceptación de Oferta de Trabajo</source>
+        <target>Candidate Job Offer Acceptance</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/referrals-show.component.ts</context>
+          <context context-type="linenumber">87</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="referralsseeSenior3MonthsID" datatype="html">
+        <source>Seniority 3 Meses</source>
+        <target>Seniority 3 Months</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/referrals-show.component.ts</context>
+          <context context-type="linenumber">88</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="referralsseeSenior6MonthsID" datatype="html">
+        <source>Seniority 6 Meses</source>
+        <target>Seniority 6 Months</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/referrals-show.component.ts</context>
+          <context context-type="linenumber">89</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="referralsseeEmailRefID" datatype="html">
+        <source>Correo electrónico: <x id="INTERPOLATION" equiv-text="{{ref.email}}"/></source>
+        <target>Email: <x id="INTERPOLATION" equiv-text="{{ref.email}}"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/referrals-show.component.ts</context>
+          <context context-type="linenumber">118</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="referralsseePhoneRefID" datatype="html">
+        <source>Teléfono: <x id="INTERPOLATION" equiv-text="{{ref.phone}}"/></source>
+        <target>Phone: <x id="INTERPOLATION" equiv-text="{{ref.phone}}"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/referrals-show.component.ts</context>
+          <context context-type="linenumber">119</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="referralsseeCareerRefID" datatype="html">
+        <source>Carrera: <x id="INTERPOLATION" equiv-text="{{ref.career}}"/></source>
+        <target>Career: <x id="INTERPOLATION" equiv-text="{{ref.career}}"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/referrals-show.component.ts</context>
+          <context context-type="linenumber">120</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="referralsseeEditRefID" datatype="html">
+        <source>Editar</source>
+        <target>Edit</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/referrals-show.component.ts</context>
+          <context context-type="linenumber">121</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="referralsseeDeleteRefID" datatype="html">
+        <source>Eliminar</source>
+        <target>Delete</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/referrals-show.component.ts</context>
+          <context context-type="linenumber">122</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="referralsseeStatusRefID" datatype="html">
+        <source>Estatus</source>
+        <target>Status</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/referrals-show.component.ts</context>
+          <context context-type="linenumber">123</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="referralsseeStatusYourCandidateID" datatype="html">
+        <source>Estatus de tu candidato:</source>
+        <target>Status of your candidate:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/referrals-show.component.ts</context>
+          <context context-type="linenumber">139</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="referralsseeStatusNombreID" datatype="html">
+        <source>Nombre</source>
+        <target>Nombre</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/referrals-show.component.ts</context>
+          <context context-type="linenumber">148</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="referralsseeStatusProfileID" datatype="html">
+        <source>Validación de Perfil</source>
+        <target>Profile validation</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/referrals-show.component.ts</context>
+          <context context-type="linenumber">149</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="referralsseeStatusInterviewTalentID" datatype="html">
+        <source>Entrevista Talent Hub</source>
+        <target>Interview TalentHub</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/referrals-show.component.ts</context>
+          <context context-type="linenumber">150</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="referralsseeStatusHiringID" datatype="html">
+        <source>Entrevista Hiring Manager</source>
+        <target>Interview Hiring Manager</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/referrals-show.component.ts</context>
+          <context context-type="linenumber">151</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="referralsseeStatusN1ID" datatype="html">
+        <source>Entrevista N+2 / Functional</source>
+        <target>Interview N+2 / Functional</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/referrals-show.component.ts</context>
+          <context context-type="linenumber">152</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="referralsseeStatusJobOfferID" datatype="html">
+        <source>Oferta de Trabajo</source>
+        <target>Job Offer</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/referrals-show.component.ts</context>
+          <context context-type="linenumber">153</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="referralsseeStatusJobOfferAceptanceID" datatype="html">
+        <source>Aceptación de oferta de trabajo</source>
+        <target>Candidate Job Offer Acceptance</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/referrals-show.component.ts</context>
+          <context context-type="linenumber">154</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="referralsseeStatusSenior3ID" datatype="html">
+        <source>Seniority 3 Meses</source>
+        <target>Seniority 3 Months</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/referrals-show.component.ts</context>
+          <context context-type="linenumber">155</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="referralsseeStatusSenior6ID" datatype="html">
+        <source>Seniority 6 Meses</source>
+        <target>Seniority 6 Months</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/referrals-show.component.ts</context>
+          <context context-type="linenumber">156</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="referralsseeCloseModalID" datatype="html">
+        <source>Cerrar</source>
+        <target>Close</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/referrals-show.component.ts</context>
+          <context context-type="linenumber">178</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="referralsseeRecruTituloID" datatype="html">
+        <source>Mis Candidatos
+											<x id="START_TAG_BUTTON" ctype="x-button" equiv-text="&lt;button&gt;"/>Back to menu<x id="CLOSE_TAG_BUTTON" ctype="x-button" equiv-text="&lt;/button&gt;"/>
+											<x id="START_TAG_BUTTON_1" ctype="x-button" equiv-text="&lt;button&gt;"/>Get Report<x id="CLOSE_TAG_BUTTON" ctype="x-button" equiv-text="&lt;/button&gt;"/>
+											<x id="START_TAG_BUTTON_2" ctype="x-button" equiv-text="&lt;button&gt;"/>Back to menu<x id="CLOSE_TAG_BUTTON" ctype="x-button" equiv-text="&lt;/button&gt;"/>
+										</source>
+        <target>My Referrals
+											<x id="START_TAG_BUTTON" ctype="x-button" equiv-text="&lt;button&gt;"/>Back to menu<x id="CLOSE_TAG_BUTTON" ctype="x-button" equiv-text="&lt;/button&gt;"/>
+											<x id="START_TAG_BUTTON_1" ctype="x-button" equiv-text="&lt;button&gt;"/>Get Report<x id="CLOSE_TAG_BUTTON" ctype="x-button" equiv-text="&lt;/button&gt;"/>
+											<x id="START_TAG_BUTTON_2" ctype="x-button" equiv-text="&lt;button&gt;"/>Back to menu<x id="CLOSE_TAG_BUTTON" ctype="x-button" equiv-text="&lt;/button&gt;"/>
+										</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/referrals-show.component.ts</context>
+          <context context-type="linenumber">193</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="referralsseeRecrutituloPuestoID" datatype="html">
+        <source>Candidatos para un puesto en Faurecia</source>
+        <target>Candidates for Faurecia Positions</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/referrals-show.component.ts</context>
+          <context context-type="linenumber">200</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="referralsseeRecruProfileValiID" datatype="html">
+        <source>Validación de Perfil</source>
+        <target>Profile validation</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/referrals-show.component.ts</context>
+          <context context-type="linenumber">208</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="referralsseeRecruInterviewTalentID" datatype="html">
+        <source>Entrevista Talent Hub</source>
+        <target>Interview TalentHub</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/referrals-show.component.ts</context>
+          <context context-type="linenumber">209</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="referralsseeRecruInterviewHiringID" datatype="html">
+        <source>Entrevista Hiring Manager</source>
+        <target>Interview Hiring Manager</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/referrals-show.component.ts</context>
+          <context context-type="linenumber">210</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="referralsseeRecruInterviewN1ID" datatype="html">
+        <source>Entrevista N+2 / Functional</source>
+        <target>Interview N+2 / Functional</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/referrals-show.component.ts</context>
+          <context context-type="linenumber">211</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="referralsseeRecruJobOfferID" datatype="html">
+        <source>Oferta de Trabajo</source>
+        <target>Job Offer</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/referrals-show.component.ts</context>
+          <context context-type="linenumber">212</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="referralsseeRecruJobOfferAceptanceID" datatype="html">
+        <source>Aceptación de Oferta de Trabajo</source>
+        <target>Candidate Job Offer Acceptance</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/referrals-show.component.ts</context>
+          <context context-type="linenumber">213</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="referralsseeRecruSenior3ID" datatype="html">
+        <source>Seniority 3 Meses</source>
+        <target>Seniority 3 Months</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/referrals-show.component.ts</context>
+          <context context-type="linenumber">214</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="referralsseeRecruSenior6ID" datatype="html">
+        <source>Seniority 6 Meses</source>
+        <target>Seniority 6 Months</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/referrals-show.component.ts</context>
+          <context context-type="linenumber">215</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="referralsseeRecruOpcionesID" datatype="html">
+        <source>Opciones</source>
+        <target>Options</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/referrals-show.component.ts</context>
+          <context context-type="linenumber">216</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="referralsseeRecruVerID" datatype="html">
+        <source>Ver</source>
+        <target>See</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/referrals-show.component.ts</context>
+          <context context-type="linenumber">363</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="referralsseeRecruTituloTraineesID" datatype="html">
+        <source>Candidatos recomendados como Practicantes</source>
+        <target>Candidates for Faurecia Trainee Positions</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/referrals-show.component.ts</context>
+          <context context-type="linenumber">370</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="referralsseeRecruTablaTraineeOpcionesID" datatype="html">
+        <source>Opciones</source>
+        <target>Opciones</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/referrals-show.component.ts</context>
+          <context context-type="linenumber">377</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="referralsseeRecruTablaTraineesSeeID" datatype="html">
+        <source>Ver</source>
+        <target>See</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/referrals-show.component.ts</context>
+          <context context-type="linenumber">386</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="referralsseeRecruModalTituloID" datatype="html">
+        <source>Referencia de: <x id="INTERPOLATION" equiv-text="{{userNormal.nombre}}"/></source>
+        <target>Referral from: <x id="INTERPOLATION" equiv-text="{{userNormal.nombre}}"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/referrals-show.component.ts</context>
+          <context context-type="linenumber">404</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="referralsseeRecruModalNombreID" datatype="html">
+        <source>Nombre: <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/><x id="INTERPOLATION" equiv-text="{{userNormal.nombre}}"/><x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/></source>
+        <target>Name: <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/><x id="INTERPOLATION" equiv-text="{{userNormal.nombre}}"/><x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/referrals-show.component.ts</context>
+          <context context-type="linenumber">419</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="referralsseeRecruModalEmailID" datatype="html">
+        <source>Email: <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/><x id="INTERPOLATION" equiv-text="{{userNormal.email}}"/><x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/></source>
+        <target>Email: <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/><x id="INTERPOLATION" equiv-text="{{userNormal.email}}"/><x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/referrals-show.component.ts</context>
+          <context context-type="linenumber">420</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="referralsseeRecruModalPhoneID" datatype="html">
+        <source>Teléfono: <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/><x id="INTERPOLATION" equiv-text="{{userNormal.phone}}"/><x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/></source>
+        <target>Phone: <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/><x id="INTERPOLATION" equiv-text="{{userNormal.phone}}"/><x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/referrals-show.component.ts</context>
+          <context context-type="linenumber">421</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="referralsseeRecruModalPositionID" datatype="html">
+        <source>Posición: <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/><x id="INTERPOLATION" equiv-text="{{userNormal.status}}"/><x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/></source>
+        <target>Position: <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/><x id="INTERPOLATION" equiv-text="{{userNormal.status}}"/><x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/referrals-show.component.ts</context>
+          <context context-type="linenumber">422</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="referralsseeRecruModalAreaID" datatype="html">
+        <source>Área: <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/><x id="INTERPOLATION" equiv-text="{{userNormal.area1}}"/><x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/></source>
+        <target>Area: <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/><x id="INTERPOLATION" equiv-text="{{userNormal.area1}}"/><x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/referrals-show.component.ts</context>
+          <context context-type="linenumber">423</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="referralsseeRecruModalCloseID" datatype="html">
+        <source>Cerrar</source>
+        <target>Close</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/referrals-show.component.ts</context>
+          <context context-type="linenumber">428</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="editarPerfilID" datatype="html">
+        <source>Editar Perfil
+											<x id="START_TAG_DIV" ctype="x-div" equiv-text="&lt;div&gt;"/>
+												<x id="START_TAG_BUTTON" ctype="x-button" equiv-text="&lt;button&gt;"/>Volver a Inicio<x id="CLOSE_TAG_BUTTON" ctype="x-button" equiv-text="&lt;/button&gt;"/>
+											<x id="CLOSE_TAG_DIV" ctype="x-div" equiv-text="&lt;/div&gt;"/>
+											<x id="START_TAG_DIV_1" ctype="x-div" equiv-text="&lt;div&gt;"/>
+												<x id="START_TAG_BUTTON" ctype="x-button" equiv-text="&lt;button&gt;"/>Volver a Inicio<x id="CLOSE_TAG_BUTTON" ctype="x-button" equiv-text="&lt;/button&gt;"/>
+											<x id="CLOSE_TAG_DIV" ctype="x-div" equiv-text="&lt;/div&gt;"/>
+											<x id="START_TAG_DIV_2" ctype="x-div" equiv-text="&lt;div&gt;"/>
+												<x id="START_TAG_BUTTON_1" ctype="x-button" equiv-text="&lt;button&gt;"/>Volver a Perfil<x id="CLOSE_TAG_BUTTON" ctype="x-button" equiv-text="&lt;/button&gt;"/>
+											<x id="CLOSE_TAG_DIV" ctype="x-div" equiv-text="&lt;/div&gt;"/>
+										</source>
+        <target>Edit Profile
+											<x id="START_TAG_DIV" ctype="x-div" equiv-text="&lt;div&gt;"/>
+												<x id="START_TAG_BUTTON" ctype="x-button" equiv-text="&lt;button&gt;"/>Back Home<x id="CLOSE_TAG_BUTTON" ctype="x-button" equiv-text="&lt;/button&gt;"/>
+											<x id="CLOSE_TAG_DIV" ctype="x-div" equiv-text="&lt;/div&gt;"/>
+											<x id="START_TAG_DIV_1" ctype="x-div" equiv-text="&lt;div&gt;"/>
+												<x id="START_TAG_BUTTON" ctype="x-button" equiv-text="&lt;button&gt;"/>Back Home<x id="CLOSE_TAG_BUTTON" ctype="x-button" equiv-text="&lt;/button&gt;"/>
+											<x id="CLOSE_TAG_DIV" ctype="x-div" equiv-text="&lt;/div&gt;"/>
+											<x id="START_TAG_DIV_2" ctype="x-div" equiv-text="&lt;div&gt;"/>
+												<x id="START_TAG_BUTTON_1" ctype="x-button" equiv-text="&lt;button&gt;"/>Back to Profile<x id="CLOSE_TAG_BUTTON" ctype="x-button" equiv-text="&lt;/button&gt;"/>
+											<x id="CLOSE_TAG_DIV" ctype="x-div" equiv-text="&lt;/div&gt;"/>
+										</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/edit-profile.component.ts</context>
+          <context context-type="linenumber">69</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="editarPerfilNombreID" datatype="html">
+        <source>Nombre</source>
+        <target>Name</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/edit-profile.component.ts</context>
+          <context context-type="linenumber">89</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="editarPerfilPrimerApellidoID" datatype="html">
+        <source>Primer Apellido</source>
+        <target>First last name</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/edit-profile.component.ts</context>
+          <context context-type="linenumber">95</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="editarPerfilSegundoApellidoID" datatype="html">
+        <source>Segundo Apellido</source>
+        <target>Second last name</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/edit-profile.component.ts</context>
+          <context context-type="linenumber">101</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="editarPerfilEmailID" datatype="html">
+        <source>Correo electrónico</source>
+        <target>Email</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/edit-profile.component.ts</context>
+          <context context-type="linenumber">112</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="editarPerfilTelefonoID" datatype="html">
+        <source>Teléfono</source>
+        <target>Phone</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/edit-profile.component.ts</context>
+          <context context-type="linenumber">118</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="editarPerfilPosicionID" datatype="html">
+        <source>Posición</source>
+        <target>Position</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/edit-profile.component.ts</context>
+          <context context-type="linenumber">134</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="editarPerfilAreaID" datatype="html">
+        <source>Área</source>
+        <target>Area</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/edit-profile.component.ts</context>
+          <context context-type="linenumber">140</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="editarPerfilGuardarID" datatype="html">
+        <source>Guardar</source>
+        <target>Save</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/edit-profile.component.ts</context>
+          <context context-type="linenumber">149</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="referralShowTituloID" datatype="html">
+        <source>Candidato: <x id="INTERPOLATION" equiv-text="{{referral.nombre}}"/></source>
+        <target>Referral: <x id="INTERPOLATION" equiv-text="{{referral.nombre}}"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/referral-show.component.ts</context>
+          <context context-type="linenumber">70</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="referralShowNombreID" datatype="html">
+        <source>Nombre: <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/><x id="INTERPOLATION" equiv-text="{{referral.nombre}}"/><x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/></source>
+        <target>Name: <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/><x id="INTERPOLATION" equiv-text="{{referral.nombre}}"/><x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/referral-show.component.ts</context>
+          <context context-type="linenumber">78</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="referralShowApellidoID" datatype="html">
+        <source>Apellido: <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/><x id="INTERPOLATION" equiv-text="{{referral.lastname}}"/><x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/></source>
+        <target>Last name: <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/><x id="INTERPOLATION" equiv-text="{{referral.lastname}}"/><x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/referral-show.component.ts</context>
+          <context context-type="linenumber">82</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="referralShowEmailID" datatype="html">
+        <source>Correo electrónico: <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/><x id="INTERPOLATION" equiv-text="{{referral.email}}"/><x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/></source>
+        <target>Email: <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/><x id="INTERPOLATION" equiv-text="{{referral.email}}"/><x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/referral-show.component.ts</context>
+          <context context-type="linenumber">86</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="referralShowTelefonoID" datatype="html">
+        <source>Teléfono: <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/><x id="INTERPOLATION" equiv-text="{{referral.phone}}"/><x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/></source>
+        <target>Phone: <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/><x id="INTERPOLATION" equiv-text="{{referral.phone}}"/><x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/referral-show.component.ts</context>
+          <context context-type="linenumber">95</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="referralShowRedSocialID" datatype="html">
+        <source>Red Social: <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/><x id="INTERPOLATION" equiv-text="{{referral.socialnetwork}}"/><x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/></source>
+        <target>Social network: <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/><x id="INTERPOLATION" equiv-text="{{referral.socialnetwork}}"/><x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/referral-show.component.ts</context>
+          <context context-type="linenumber">99</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="referralShowCVID" datatype="html">
+        <source>Ver CV</source>
+        <target>See CV</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/referral-show.component.ts</context>
+          <context context-type="linenumber">104</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="referralShowNoCVID" datatype="html">
+        <source>No CV</source>
+        <target>No CV</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/referral-show.component.ts</context>
+          <context context-type="linenumber">107</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="referralShowExperienciaID" datatype="html">
+        <source>Experiencia: <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/><x id="INTERPOLATION" equiv-text="{{referral.experience}}"/><x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/></source>
+        <target>Experience: <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/><x id="INTERPOLATION" equiv-text="{{referral.experience}}"/><x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/referral-show.component.ts</context>
+          <context context-type="linenumber">117</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="referralShowAreaID" datatype="html">
+        <source>Área: <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/><x id="INTERPOLATION" equiv-text="{{referral.area}}"/><x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/></source>
+        <target>Area: <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/><x id="INTERPOLATION" equiv-text="{{referral.area}}"/><x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/referral-show.component.ts</context>
+          <context context-type="linenumber">121</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="referralShowStatusCandidateID" datatype="html">
+        <source>Estatus del Candidato: <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/><x id="INTERPOLATION" equiv-text="{{referral.lastposition}}"/><x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/></source>
+        <target>Candidate Status: <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/><x id="INTERPOLATION" equiv-text="{{referral.lastposition}}"/><x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/referral-show.component.ts</context>
+          <context context-type="linenumber">125</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="referralShowCarreraID" datatype="html">
+        <source>Carrera: <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/><x id="INTERPOLATION" equiv-text="{{referral.career}}"/><x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/></source>
+        <target>Career: <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/><x id="INTERPOLATION" equiv-text="{{referral.career}}"/><x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/referral-show.component.ts</context>
+          <context context-type="linenumber">134</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="referralShowUniversidadID" datatype="html">
+        <source>Universidad: <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/><x id="INTERPOLATION" equiv-text="{{referral.university}}"/><x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/></source>
+        <target>University: <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/><x id="INTERPOLATION" equiv-text="{{referral.university}}"/><x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/referral-show.component.ts</context>
+          <context context-type="linenumber">138</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="referralShowGeneroID" datatype="html">
+        <source>Género: <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/><x id="INTERPOLATION" equiv-text="{{referral.genero}}"/><x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/></source>
+        <target>Gender: <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/><x id="INTERPOLATION" equiv-text="{{referral.genero}}"/><x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/referral-show.component.ts</context>
+          <context context-type="linenumber">147</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="referralShowNivelInglesID" datatype="html">
+        <source>Nivel de Inglés: <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/><x id="INTERPOLATION" equiv-text="{{referral.englishlevelstring}}"/><x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/></source>
+        <target>English level: <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/><x id="INTERPOLATION" equiv-text="{{referral.englishlevelstring}}"/><x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/referral-show.component.ts</context>
+          <context context-type="linenumber">151</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="referralShowEstadoID" datatype="html">
+        <source>Estado: <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/><x id="INTERPOLATION" equiv-text="{{referral.estadoresidencia}}"/><x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/></source>
+        <target>State: <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/><x id="INTERPOLATION" equiv-text="{{referral.estadoresidencia}}"/><x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/referral-show.component.ts</context>
+          <context context-type="linenumber">155</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="referralShowUbicacionID" datatype="html">
+        <source>Ubicación: <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/><x id="INTERPOLATION" equiv-text="{{referral.localidadrecruiter}}"/><x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/></source>
+        <target>Location: <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/><x id="INTERPOLATION" equiv-text="{{referral.localidadrecruiter}}"/><x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/referral-show.component.ts</context>
+          <context context-type="linenumber">164</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="referralShowRecruiterID" datatype="html">
+        <source>Reclutador: <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/><x id="INTERPOLATION" equiv-text="{{referral.englishlevel}}"/><x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/></source>
+        <target>Recruiter: <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/><x id="INTERPOLATION" equiv-text="{{referral.englishlevel}}"/><x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/referral-show.component.ts</context>
+          <context context-type="linenumber">168</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="referralShowArea1ID" datatype="html">
+        <source>Área: <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/><x id="INTERPOLATION" equiv-text="{{referral.areaposition}}"/><x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/></source>
+        <target>Area: <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/><x id="INTERPOLATION" equiv-text="{{referral.areaposition}}"/><x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/referral-show.component.ts</context>
+          <context context-type="linenumber">177</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="referralShowPosicion1ID" datatype="html">
+        <source>Posición: <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/><x id="INTERPOLATION" equiv-text="{{referral.nameposition}}"/><x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/></source>
+        <target>Position: <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/><x id="INTERPOLATION" equiv-text="{{referral.nameposition}}"/><x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/referral-show.component.ts</context>
+          <context context-type="linenumber">181</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="referralShowArea2ID" datatype="html">
+        <source>Segunda Área: <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/><x id="INTERPOLATION" equiv-text="{{referral.areapositiondos}}"/><x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/></source>
+        <target>Second Area: <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/><x id="INTERPOLATION" equiv-text="{{referral.areapositiondos}}"/><x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/referral-show.component.ts</context>
+          <context context-type="linenumber">187</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="referralShowPosicion2ID" datatype="html">
+        <source>Segunda Posición: <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/><x id="INTERPOLATION" equiv-text="{{referral.namepositiondos}}"/><x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/></source>
+        <target>Second Position: <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/><x id="INTERPOLATION" equiv-text="{{referral.namepositiondos}}"/><x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/referral-show.component.ts</context>
+          <context context-type="linenumber">191</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="referralShowBotonVolverID" datatype="html">
+        <source>Volver al menú</source>
+        <target>Back to menu</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/referral-show.component.ts</context>
+          <context context-type="linenumber">201</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="referralEditTituloID" datatype="html">
+        <source>Editar Candidato <x id="START_TAG_BUTTON" ctype="x-button" equiv-text="&lt;button&gt;"/>Volver al menú<x id="CLOSE_TAG_BUTTON" ctype="x-button" equiv-text="&lt;/button&gt;"/></source>
+        <target>Edit Referral <x id="START_TAG_BUTTON" ctype="x-button" equiv-text="&lt;button&gt;"/>Back to menu<x id="CLOSE_TAG_BUTTON" ctype="x-button" equiv-text="&lt;/button&gt;"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/referral-edit.component.ts</context>
+          <context context-type="linenumber">67</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="referralEditNombreID" datatype="html">
+        <source>Nombre</source>
+        <target>Name</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/referral-edit.component.ts</context>
+          <context context-type="linenumber">77</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="referralEditApellidoID" datatype="html">
+        <source>Apellido</source>
+        <target>Last name</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/referral-edit.component.ts</context>
+          <context context-type="linenumber">84</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="referralEditEmailID" datatype="html">
+        <source>Correo electrónico</source>
+        <target>E-mail</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/referral-edit.component.ts</context>
+          <context context-type="linenumber">91</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="referralEditTelefonoID" datatype="html">
+        <source>Teléfono</source>
+        <target>Cellphone</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/referral-edit.component.ts</context>
+          <context context-type="linenumber">109</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="referralEditRedSocialID" datatype="html">
+        <source>Red Social</source>
+        <target>Social network</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/referral-edit.component.ts</context>
+          <context context-type="linenumber">116</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="referralEditEstadoID" datatype="html">
+        <source>Estado de Residencia</source>
+        <target>Residence state</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/referral-edit.component.ts</context>
+          <context context-type="linenumber">123</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="referralEditExperienciaID" datatype="html">
+        <source>Experiencia</source>
+        <target>Experience</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/referral-edit.component.ts</context>
+          <context context-type="linenumber">140</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="referralEditAreaID" datatype="html">
+        <source>Área</source>
+        <target>Area</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/referral-edit.component.ts</context>
+          <context context-type="linenumber">147</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="referralEditUbicacionID" datatype="html">
+        <source>Ubicación del reclutador</source>
+        <target>Recruiter location</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/referral-edit.component.ts</context>
+          <context context-type="linenumber">156</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="referralEditReclutadorID" datatype="html">
+        <source>Reclutador</source>
+        <target>Recruiter</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/referral-edit.component.ts</context>
+          <context context-type="linenumber">168</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="referralEditAreaUnoID" datatype="html">
+        <source>Área</source>
+        <target>Area</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/referral-edit.component.ts</context>
+          <context context-type="linenumber">184</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="referralEditPosicionUnoID" datatype="html">
+        <source>Posición</source>
+        <target>Position</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/referral-edit.component.ts</context>
+          <context context-type="linenumber">196</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="referralEditPosicionID" datatype="html">
+        <source>Escribe la posición</source>
+        <target>Type the position</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/referral-edit.component.ts</context>
+          <context context-type="linenumber">210</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="referralEditAreaDosID" datatype="html">
+        <source>Segunda área</source>
+        <target>Second area</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/referral-edit.component.ts</context>
+          <context context-type="linenumber">219</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="referralEditPosicionDosSelectID" datatype="html">
+        <source>Segunda posición</source>
+        <target>Second position</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/referral-edit.component.ts</context>
+          <context context-type="linenumber">231</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="referralEditPosicionDosID" datatype="html">
+        <source>Escribe la segunda posición</source>
+        <target>Type the position</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/referral-edit.component.ts</context>
+          <context context-type="linenumber">245</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="referralEditCarreraID" datatype="html">
+        <source>Carrera</source>
+        <target>Career</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/referral-edit.component.ts</context>
+          <context context-type="linenumber">256</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="referralEditUniversidadID" datatype="html">
+        <source>Universidad</source>
+        <target>University</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/referral-edit.component.ts</context>
+          <context context-type="linenumber">263</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="referralEditGeneroID" datatype="html">
+        <source>Género</source>
+        <target>Gender</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/referral-edit.component.ts</context>
+          <context context-type="linenumber">272</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="referralEditInglesID" datatype="html">
+        <source>Nivel de Inglés</source>
+        <target>English level</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/referral-edit.component.ts</context>
+          <context context-type="linenumber">292</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="referralEditEstatusID" datatype="html">
+        <source>Estatus del Candidato</source>
+        <target>Candidate Status</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/referral-edit.component.ts</context>
+          <context context-type="linenumber">304</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="referralEditBotonID" datatype="html">
+        <source>Actualizar</source>
+        <target>Update</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/referral-edit.component.ts</context>
+          <context context-type="linenumber">321</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="navbarRecruHomeID" datatype="html">
+        <source>Inicio</source>
+        <target>Home</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/navbar-recruiter.component.ts</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="navbarRecruMisRefesID" datatype="html">
+        <source>Candidatos</source>
+        <target>My Referrals</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/navbar-recruiter.component.ts</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="navbarRecruNuevoID" datatype="html">
+        <source><x id="START_TAG_MDB-ICON" ctype="x-mdb-icon" equiv-text="&lt;mdb-icon&gt;"/><x id="CLOSE_TAG_MDB-ICON" ctype="x-mdb-icon" equiv-text="&lt;/mdb-icon&gt;"/><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>Nuevo<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></source>
+        <target><x id="START_TAG_MDB-ICON" ctype="x-mdb-icon" equiv-text="&lt;mdb-icon&gt;"/><x id="CLOSE_TAG_MDB-ICON" ctype="x-mdb-icon" equiv-text="&lt;/mdb-icon&gt;"/><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>New<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/navbar-recruiter.component.ts</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="navbarRecruCerrarSesionID" datatype="html">
+        <source>Cerrar Sesión</source>
+        <target>Logout</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/navbar-recruiter.component.ts</context>
+          <context context-type="linenumber">21</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="navbarRecruModalTituloID" datatype="html">
+        <source>Mis notificaciones</source>
+        <target>My Notifications</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/navbar-recruiter.component.ts</context>
+          <context context-type="linenumber">42</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="navbarRecruModalDeleteID" datatype="html">
+        <source>Eliminar</source>
+        <target>Delete</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/navbar-recruiter.component.ts</context>
+          <context context-type="linenumber">50</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="navbarRecruModalCloseID" datatype="html">
+        <source>Cerrar</source>
+        <target>Close</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/navbar-recruiter.component.ts</context>
+          <context context-type="linenumber">60</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="getCardsVolverInicioUserID" datatype="html">
+        <source>Volver a Inicio</source>
+        <target>Back Home</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/get-cards.component.ts</context>
+          <context context-type="linenumber">63</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="getCardsVolverInicioRecluID" datatype="html">
+        <source>Volver a Inicio</source>
+        <target>Back Home</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/get-cards.component.ts</context>
+          <context context-type="linenumber">66</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="getCardsPuntosActualesID" datatype="html">
+        <source>Puntos Actuales: <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/><x id="INTERPOLATION" equiv-text="{{totalUserPoints}}"/><x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></source>
+        <target>Current Points: <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/><x id="INTERPOLATION" equiv-text="{{totalUserPoints}}"/><x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/get-cards.component.ts</context>
+          <context context-type="linenumber">69</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="getCardsClickEnElBotonID" datatype="html">
+        <source>Click en el botón <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>Conseguir Tarjeta<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/> para seleccionar la tarjeta de Amazon que deseas canjear</source>
+        <target>Click on the button <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>Get Card<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/> to choose the Amazon Card you want to request</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/get-cards.component.ts</context>
+          <context context-type="linenumber">74</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="getCardsSeraEnviadoEmailID" datatype="html">
+        <source>Un correo electrónico será enviado al equipo de Talent Hub solicitando tu tarjeta</source>
+        <target>An email will be sent to Talent Hub Team requesting your card</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/get-cards.component.ts</context>
+          <context context-type="linenumber">77</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="getCardsDentro7DiasID" datatype="html">
+        <source>Dentro de 7 días recibirás tu tarjeta, checa tu correo para la confirmación del reclutador <x id="START_TAG_MDB-ICON" ctype="x-mdb-icon" equiv-text="&lt;mdb-icon&gt;"/><x id="CLOSE_TAG_MDB-ICON" ctype="x-mdb-icon" equiv-text="&lt;/mdb-icon&gt;"/></source>
+        <target>Within 7 days you will receive your card, check your email for the recluiter confirmation <x id="START_TAG_MDB-ICON" ctype="x-mdb-icon" equiv-text="&lt;mdb-icon&gt;"/><x id="CLOSE_TAG_MDB-ICON" ctype="x-mdb-icon" equiv-text="&lt;/mdb-icon&gt;"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/get-cards.component.ts</context>
+          <context context-type="linenumber">79</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="getCardsConseguirTarjeta1000ID" datatype="html">
+        <source>Conseguir Tarjeta</source>
+        <target>Get Card</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/get-cards.component.ts</context>
+          <context context-type="linenumber">90</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="getCardsConseguirTarjeta2000ID" datatype="html">
+        <source>Conseguir Tarjeta</source>
+        <target>Get Card</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/get-cards.component.ts</context>
+          <context context-type="linenumber">97</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="getCardsConseguirTarjeta3000ID" datatype="html">
+        <source>Conseguir Tarjeta</source>
+        <target>Get Card</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/get-cards.component.ts</context>
+          <context context-type="linenumber">104</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="getCardsConfirmacionTituloID" datatype="html">
+        <source>Confirmación para tarjeta Amazon de <x id="INTERPOLATION" equiv-text="{{confValue}}"/> puntos</source>
+        <target>Confirmation for Amazon Card of <x id="INTERPOLATION" equiv-text="{{confValue}}"/> points</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/get-cards.component.ts</context>
+          <context context-type="linenumber">125</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="getCardsHasSeleccionadoID" datatype="html">
+        <source>
+	              Has seleccionado una tarjeta de <x id="INTERPOLATION" equiv-text="{{confValue}}"/> puntos
+							</source>
+              <target>
+      	              You have selected a card of <x id="INTERPOLATION" equiv-text="{{confValue}}"/> points
+      							</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/get-cards.component.ts</context>
+          <context context-type="linenumber">130</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="getCardsClickenSolicitarID" datatype="html">
+        <source>
+								Click en <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>Solicitar Tarjeta<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/> para enviar un email al equipo de Talent Hub
+	            </source>
+              <target>
+      								Click on <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>Get Card<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/> to send an email to Talent Hun Team
+      	            </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/get-cards.component.ts</context>
+          <context context-type="linenumber">146</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="getCardsCerrarModalID" datatype="html">
+        <source>Cerrar</source>
+        <target>Close</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/get-cards.component.ts</context>
+          <context context-type="linenumber">153</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="getCardsSolicitarModalID" datatype="html">
+        <source>Solicitar Tarjeta</source>
+        <target>Request Card</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/get-cards.component.ts</context>
+          <context context-type="linenumber">154</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="forgotPasswordTituloID" datatype="html">
+        <source>Reestablecer Contraseña</source>
+        <target>Forgot Password</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/forgotpassword.component.ts</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="forgotPasswordEmailID" datatype="html">
+        <source>Correo electrónico</source>
+        <target>Your email</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/forgotpassword.component.ts</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="forgotPasswordSoyReclutadorID" datatype="html">
+        <source>Soy un Reclutador</source>
+        <target>I am a Recruiter</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/forgotpassword.component.ts</context>
+          <context context-type="linenumber">29</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="forgotPasswordEnviarLinkID" datatype="html">
+        <source>Enviar Link</source>
+        <target>Send Link</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/forgotpassword.component.ts</context>
+          <context context-type="linenumber">48</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="forgotPasswordMiembroAlreadyID" datatype="html">
+        <source>¿Ya eres un miembro?
+                <x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/> Ir a iniciar Sesión<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>
+              </source>
+        <target>Already a member?
+                <x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/> Go to Login<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>
+              </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/forgotpassword.component.ts</context>
+          <context context-type="linenumber">56</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="resetPasswordTituloID" datatype="html">
+        <source>Por favor, llena el formulario</source>
+        <target>Please, fill out the form</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/resetpassword.component.ts</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="resetPasswordEmailID" datatype="html">
+        <source>Correo Electrónico</source>
+        <target>Your email</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/resetpassword.component.ts</context>
+          <context context-type="linenumber">21</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="resetPasswordNuevoPasswordID" datatype="html">
+        <source>Nueva Contraseña</source>
+        <target>New Password</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/resetpassword.component.ts</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="resetPasswordViejoPasswordID" datatype="html">
+        <source>Confirmar Contraseña</source>
+        <target>Confirm Password</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/resetpassword.component.ts</context>
+          <context context-type="linenumber">31</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="resetPasswordSoyReclutadorID" datatype="html">
+        <source>Soy un Reclutador</source>
+        <target>I am a Recruiter</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/resetpassword.component.ts</context>
+          <context context-type="linenumber">38</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="resetPasswordActualizarID" datatype="html">
+        <source>Actualizar</source>
+        <target>Update</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/resetpassword.component.ts</context>
+          <context context-type="linenumber">57</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="resetPasswordGoLoginID" datatype="html">
+        <source> Ir a Login</source>
+        <target> Go to Login</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/components/resetpassword.component.ts</context>
+          <context context-type="linenumber">66</context>
+        </context-group>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
